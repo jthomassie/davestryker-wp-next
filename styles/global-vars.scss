@@ -1,0 +1,138 @@
+// styles/global-vars.scss
+
+// spacer-variables
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 3,
+  7: $spacer * 5,
+  8: $spacer * 7,
+  9: $spacer * 10,
+  10: $spacer * 15,
+  n1: $spacer * -0.25,
+  n2: $spacer * -0.5,
+  n3: $spacer * -1,
+  n4: $spacer * -1.5,
+  n5: $spacer * -2,
+) !default;
+
+// base font size
+$font-size-base: 1.1rem !default;
+//
+$line-height-base: 1.6 !default;
+$line-height-sm: 1.3 !default;
+$line-height-lg: 2.2 !default;
+
+// $h1-font-size: $font-size-base * 3 !default;
+// $h2-font-size: $font-size-base * 2 !default;
+// $h3-font-size: $font-size-base * 1.8 !default;
+// $h4-font-size: $font-size-base * 1.5 !default;
+// $h5-font-size: $font-size-base * 1.3 !default;
+// $h6-font-size: $font-size-base * 1.1 !default;
+
+$h1-font-size: $font-size-base * 3 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$h3-font-size: $font-size-base * 2 !default;
+$h4-font-size: $font-size-base * 1.8 !default;
+$h5-font-size: $font-size-base * 1.5 !default;
+$h6-font-size: $font-size-base * 1.25 !default;
+
+// sans-serif font
+$font-family-sans-serif: "Roboto", sans-serif;
+// "neue-haas-grotesk-display", "Helvetica", "Arial", sans-serif;
+// $font-family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// heading font
+$headings-font-family: "Roboto", sans-serif;
+// "neue-haas-grotesk-display", "Helvetica", "Arial", sans-serif;
+// $headings-font-family: "Barlow Condensed", sans-serif;
+
+// $h1-font-size: 7.5rem;
+// $h2-font-size: 6.0rem;
+// $h3-font-size: 4.5rem;
+// $headings-line-height: 0.9;
+
+// headings weight
+$headings-font-weight: 500;
+$headings-margin-bottom: $spacer * 1 !default;
+
+// weights
+$font-weight-light: 400 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
+$lead-font-weight: 400 !default;
+
+//
+$font-weight-base: $font-weight-light !default;
+
+// display-headings
+$display-font-sizes: (
+  1: 6.5rem,
+  2: 6rem,
+  3: 4rem,
+  4: 3.2rem,
+  5: 2.5rem,
+  6: 1.3rem,
+) !default;
+$display-font-family: $headings-font-family !default;
+$display-font-weight: 400 !default;
+// $display-font-style: null !default;
+// $display-line-height: $headings-line-height !default;
+
+// global borders
+$border-width: 1px;
+$border-color: #007ebb;
+
+// global border-radius
+$border-radius: 4px;
+
+// tables
+$table-cell-padding-y: 0.6rem !default;
+$table-cell-padding-x: 0.6rem !default;
+$table-cell-padding-y-sm: 0.3rem !default;
+$table-cell-padding-x-sm: 0.3rem !default;
+$table-border-color: #66666666 !default;
+
+//
+$primary: #1c3f7c !default;
+$secondary: #ffdd35 !default;
+
+//
+th,
+td {
+  line-height: 1.25;
+}
+
+// adobe typekit - neue-haas-grotesk-display
+// @import url("https://use.typekit.net/udi1hit.css");
+
+// google fonts
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;500;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
+// @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+// @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+
+// bootstrap 5 css
+@import "~bootstrap/scss/bootstrap.scss";
+
+/* focus - blue outline */
+*:focus,
+input:focus,
+.checkmark:focus,
+.check-mark:focus,
+.check-wrapper input:focus,
+label:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+// css grid
+$enable-cssgrid: true;

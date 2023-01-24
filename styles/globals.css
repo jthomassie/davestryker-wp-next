@@ -1,0 +1,289 @@
+/* styles/global.css */
+
+body {
+  background-color: #1c3f7c;
+  color: #fff;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+p,
+div {
+  letter-spacing: 0.02rem;
+  color: #fff;
+}
+
+a:link {
+  color: #a0cffb;
+  text-decoration: none;
+}
+a:visited {
+  color: #a0cffb;
+  text-decoration: none;
+}
+a:hover {
+  color: #82c7f5;
+  text-decoration: none;
+}
+a:active {
+  color: #82c7f5;
+  text-decoration: none;
+}
+
+.small-type {
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  color: #fff !important;
+}
+
+.cd-name {
+  font-style: italic;
+}
+
+.lt-blue {
+  background-color: #3d5f8f;
+}
+
+.navbar-dark {
+  /* opacity: 1; */
+  background-color: #000 !important;
+}
+
+.navbar-toggler {
+  border: 1px solid #6b6b6b;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #eee !important;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem !important;
+}
+
+.nav-link:hover {
+  background-color: #11284e;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  background-color: #1c3f7c;
+}
+
+footer,
+footer div,
+footer p {
+  background-color: #5e6163;
+  color: #e9e9e9;
+  min-height: 6rem;
+}
+footer a {
+  color: #a5b2c2;
+  text-decoration: none;
+}
+
+.wp-block-quote {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 2.5rem 0 2.5rem 0;
+  padding: 0 0 0 2.5rem;
+  border-left: 8px solid #3b588d;
+}
+
+.wp-block-quote p {
+  color: #ffdd35;
+  letter-spacing: 0.02;
+  font-size: 1.05rem !important;
+  line-height: 1.6;
+  margin: 0 0 0.8rem 0;
+  padding: 0 1rem 0 0;
+}
+
+cite {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  /* font-style: italic; */
+  font-size: 1.05rem !important;
+  letter-spacing: 0;
+  line-height: 1.6;
+  margin: 0 !important;
+  padding: -1rem 0 0 0 !important;
+}
+
+cite::before {
+  content: "— ";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.prod-prev {
+  /* letter-spacing: -0.03rem; */
+  color: #eee;
+}
+
+.display-1,
+.display-2 {
+  letter-spacing: -0.1rem;
+}
+
+hr {
+  color: inherit;
+  border: 0;
+  border-top: 2px solid #8194b8;
+  opacity: 0.5;
+}
+
+.mr-75pct {
+  margin-right: 85%;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+
+.small-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #82c7f5;
+}
+
+.h5-caps {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffdd35;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.yellow {
+  color: #ffdd35;
+}
+
+.img-overlay-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img-overlay-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+.demo {
+  color: #ffffff;
+  border: 1px solid #ffffff66;
+}
+
+.bids {
+  color: #eee;
+  font-size: 1.6rem;
+  margin: 0.3rem;
+  padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.6));
+}
+
+.bids:hover {
+  color: #ffdd35;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+.bids-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #9299b7;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-top: -0.6rem;
+  text-align: center;
+}
+
+.cover-img {
+  border: 1px solid #254e95;
+  box-shadow: 1px 3px 4px #030b1a;
+  transition: all 0.15s ease-out;
+  -webkit-transform: scale(0.99, 0.99);
+  transform: scale(0.99, 0.99);
+}
+
+.avatar {
+  border: 1px solid #496eae;
+  box-shadow: 1px 2px 4px #030b1a;
+}
+
+.cover-img:hover {
+  box-shadow: 6px 11px 8px #0b2045;
+  transition: all 0.15s ease-out;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* shows page */
+.shows-content p {
+  line-height: 1.4;
+}
+.shows-content hr {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.shows-content h5.show-date {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ffdd35;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+.shows-content h5.show-venue {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+.shows-content h4 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -52px;
+  visibility: hidden;
+}
+
+.nowrap {
+  /* white-space: pre; */
+  overflow: scroll;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: Menlo, "Courier New", Courier, monospace;
+  user-select: all;
+  -moz-user-select: all;
+  -webkit-user-select: all;
+}
+.card {
+  border-radius: 0.4rem;
+}
+
+.card-img-top {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
