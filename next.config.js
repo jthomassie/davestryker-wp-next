@@ -46,7 +46,7 @@ module.exports = (phase, { defaultConfig }) => {
       ignoreBuildErrors: true,
     },
     // basePath: '/out',
-    distDir: "build",
+    // distDir: "build",
     //
     // webpack(config) {
     //   config.module.rules.push({
