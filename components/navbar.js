@@ -16,12 +16,12 @@ const NavbarRb = ({ activeKey }) => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto" defaultActiveKey={activeKey}>
-                <Nav.Link as="a" href="/#top">
+                <Nav.Link as="a" href="/">
                   Home
                 </Nav.Link>
-                <Nav.Link as="a" href="/#news">
+                {/* <Nav.Link as="a" href="/#content">
                   News
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link as="a" href="/shows#content">
                   Shows
                 </Nav.Link>

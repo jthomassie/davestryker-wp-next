@@ -17,14 +17,14 @@ const Shows = ({ pageName: { edges } }) => {
   // console.log("edges", edges);
   const shows = edges.filter((o) => o.node.title == "Shows-live");
   let node = shows[0].node;
-  console.log("Shows page", node);
+  // console.log("Shows page", node);
 
   //
   return (
     <>
       <Layout>
         <Head>
-          <title>Dave Stryker</title>
+          <title>Dave Stryker - Shows</title>
         </Head>
         <Container>
           <Intro />

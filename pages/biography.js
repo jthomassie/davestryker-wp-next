@@ -1,4 +1,4 @@
-// pages/biography
+// pages/biography.js
 
 //
 import { getPageName } from "../lib/api";

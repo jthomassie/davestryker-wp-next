@@ -2,13 +2,14 @@
 
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
-import Link from "next/link";
+// import Link from "next/link";
 
 const PostPreview = ({
   title,
   coverImage,
   date,
   excerpt,
+  content,
   author,
   slug,
   id,
@@ -31,15 +32,15 @@ const PostPreview = ({
         )}
       </div>
       <h4 className="">
-        <Link href={`/posts/${slug}`}>
-          <div
-            className="hover:underline"
-            dangerouslySetInnerHTML={{ __html: title }}
-          ></div>
-        </Link>
+        {/* <Link href={`/posts/${slug}`}> */}
+        <div
+          // className="hover:underline"
+          dangerouslySetInnerHTML={{ __html: title }}
+        ></div>
+        {/* </Link> */}
       </h4>
       <Avatar author={author} date={date} />
-      <div className="mb-3" dangerouslySetInnerHTML={{ __html: excerpt }} />
+      <div className="mb-3" dangerouslySetInnerHTML={{ __html: content }} />
       <hr className="my-6" />
     </div>
   );

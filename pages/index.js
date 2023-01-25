@@ -27,29 +27,29 @@ const Index = ({ allPosts: { edges } }) => {
     o.node.cats = categs;
     return o;
   });
-  console.log("allPosts", allPosts);
+  // console.log("allPosts", allPosts);
 
   const featuredPost = allPosts.find((o) => {
     return o.node.cats.indexOf("Featured") !== -1;
   }).node;
-  console.log("featuredPost", featuredPost);
+  // console.log("featuredPost", featuredPost);
 
   const morePosts = allPosts.filter((o) => {
     return o.node.cats.indexOf("Featured") == -1;
   });
-  console.log("morePosts", morePosts);
+  // console.log("morePosts", morePosts);
 
   //
   return (
     <>
       <Layout>
         <Head>
-          <title>Dave Stryker</title>
+          <title>Dave Stryker - Home</title>
         </Head>
         <Container>
           <Intro />
-          <NavbarRb activeKey="/" />
-          <div className="anchor" id="news" />
+          <NavbarRb activeKey="/#top" />
+          <div className="anchor" id="content" />
           <Icons />
           {/*  */}
           {featuredPost && (

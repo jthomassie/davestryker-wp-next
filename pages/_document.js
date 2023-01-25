@@ -1,10 +1,11 @@
+// pages/_document.js
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-              
         <meta name="author" content="Dave Stryker" />
         <meta name="robots" content="all" />
         <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
@@ -28,8 +29,8 @@ export default function Document() {
           sizes="192x192"
           href="/android-chrome-192x192.png"
         />
-      </Head>{" "}
-      <body id="top">
+      </Head>
+      <body>
         <Main />
         <NextScript />
       </body>

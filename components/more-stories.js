@@ -22,6 +22,7 @@ const MoreStories = ({ posts }) => {
             slugid={node.id}
             slug={node.slug}
             excerpt={node.excerpt}
+            content={node.content}
             width={2000}
             height={1300}
           />

@@ -11,7 +11,7 @@ const Intro = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 px-0">
-            <div className="position-relative mt-n4">
+            <div className="position-relative">
               {/* cover image */}
               <Image
                 src={cover}
