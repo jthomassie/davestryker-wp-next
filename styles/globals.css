@@ -11,7 +11,6 @@ body {
 
 p,
 div {
-  letter-spacing: 0.02rem;
   color: #fff;
 }
 
@@ -92,14 +91,13 @@ footer a {
   font-weight: 400;
   font-style: italic;
   margin: 2.5rem 0 2.5rem 0;
-  padding: 0 0 0 2.5rem;
+  padding: 0 0 0 2rem;
   border-left: 8px solid #3b588d;
 }
 
 .wp-block-quote p {
   color: #ffdd35;
-  letter-spacing: 0.02;
-  font-size: 1.05rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.6;
   margin: 0 0 0.8rem 0;
   padding: 0 1rem 0 0;
@@ -108,9 +106,7 @@ footer a {
 cite {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  /* font-style: italic; */
-  font-size: 1.05rem !important;
-  letter-spacing: 0;
+  font-size: 1.1rem !important;
   line-height: 1.6;
   margin: 0 !important;
   padding: -1rem 0 0 0 !important;
@@ -127,8 +123,7 @@ h4,
 h5,
 h6,
 .prod-prev {
-  /* letter-spacing: -0.03rem; */
-  color: #eee;
+  color: #fff;
 }
 
 .display-1,
@@ -204,34 +199,24 @@ hr {
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
-.bids-label {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #9299b7;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  margin-top: -0.6rem;
-  text-align: center;
-}
-
 .cover-img {
   border: 1px solid #254e95;
-  box-shadow: 1px 3px 4px #030b1a;
+  box-shadow: 0px 0px 12px #254e95;
   transition: all 0.15s ease-out;
-  -webkit-transform: scale(0.99, 0.99);
-  transform: scale(0.99, 0.99);
+  /* -webkit-transform: scale(0.99, 0.99);
+  transform: scale(0.99, 0.99); */
 }
 
-.avatar {
-  border: 1px solid #496eae;
-  box-shadow: 1px 2px 4px #030b1a;
-}
-
-.cover-img:hover {
+/* .cover-img:hover {
   box-shadow: 6px 11px 8px #0b2045;
   transition: all 0.15s ease-out;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
+} */
+
+.avatar {
+  border: 1px solid #496eae;
+  box-shadow: 1px 2px 4px #030b1a;
 }
 
 /* shows page */

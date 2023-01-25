@@ -17,15 +17,17 @@ const PostPreview = ({
 }) => {
   return (
     <div className="col-12 col-md-6 col-xl-4">
-      <div className="mb-3">
+      <div className="mb-4">
         {coverImage && (
-          <CoverImage
-            title={title}
-            coverImage={coverImage}
-            slug={slug}
-            width={coverImage.node.mediaDetails.width}
-            height={coverImage.node.mediaDetails.height}
-          />
+          <div className="cover-img">
+            <CoverImage
+              title={title}
+              coverImage={coverImage}
+              slug={slug}
+              width={coverImage.node.mediaDetails.width}
+              height={coverImage.node.mediaDetails.height}
+            />
+          </div>
         )}
       </div>
       <h4 className="">
