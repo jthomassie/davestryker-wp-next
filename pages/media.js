@@ -9,37 +9,56 @@ import NavbarRb from "../components/navbar";
 import Icons from "../components/icons";
 //
 import MediaCard from "../components/media-card";
+import MediaCardImg from "../components/media-card-img";
 //
 const Media = () => {
-  let recordings = [
+  let files = [
+    {
+      name: "Dave Stryker full biography",
+      path: "/dave-stryker-full-bio-2023.pdf",
+      type: "pdf",
+    },
+    {
+      name: "Dave Stryker short biography",
+      path: "/dave-stryker-short-bio-2023.pdf",
+      type: "pdf",
+    },
+    {
+      name: "Dave Stryker discography",
+      path: "/dave-stryker-discography-2023.pdf",
+      type: "pdf",
+    },
+  ];
+
+  let images = [
     {
       name: "Dave Stryker",
-      img: "/dave-stryker-media-1.jpg",
+      path: "/dave-stryker-media-1.jpg",
       credit: "Chris Drukker",
       type: "jpg",
     },
     {
       name: "Dave Stryker",
-      img: "/dave-stryker-media-2.jpg",
+      path: "/dave-stryker-media-3.jpg",
       credit: "Chris Drukker",
       type: "jpg",
     },
     {
       name: "Dave Stryker",
-      img: "/dave-stryker-media-3.jpg",
-      credit: "Chris Drukker",
-      type: "jpg",
-    },
-    {
-      name: "Dave Stryker",
-      img: "/dave-stryker-media-4.jpg",
-      credit: "Steven Peterson",
-      type: "jpg",
-    },
-    {
-      name: "Dave Stryker",
-      img: "/dave-stryker-media-5.jpg",
+      path: "/dave-stryker-media-5.jpg",
       credit: "Bob McClenahan",
+      type: "jpg",
+    },
+    {
+      name: "Dave Stryker",
+      path: "/dave-stryker-media-2.jpg",
+      credit: "Chris Drukker",
+      type: "jpg",
+    },
+    {
+      name: "Dave Stryker",
+      path: "/dave-stryker-media-4.jpg",
+      credit: "Steven Peterson",
       type: "jpg",
     },
   ];
@@ -52,7 +71,7 @@ const Media = () => {
         </Head>
         <Container>
           <Intro />
-          <NavbarRb activeKey="/media#content" />
+          <NavbarRb activeKey="/media" />
           <div className="anchor" id="content" />
           <Icons />
           {/*  */}
@@ -63,23 +82,37 @@ const Media = () => {
                   <h1 className="display-4">Media kit</h1>
                   <hr class="mb-4" />
                 </div>
-                {/*  */}
-                <div className="row">
-                  {recordings.map((node) => (
-                    <>
-                      <div className="col-6 col-md-4 col-lg-3" key={node.sku}>
-                        <MediaCard
-                          name={node.name}
-                          image={node.img}
-                          credit={node.credit}
-                          type={node.type}
-                          width={1050}
-                          height={1000}
-                        />
-                      </div>
-                    </>
-                  ))}
+                <div className="col-12">
+                  <p className="">
+                    Files selected will be downloaded to the default Downloads
+                    folder on your Mac or PC.
+                  </p>
                 </div>
+                {/* file cards */}
+                {files.map((node) => (
+                  <>
+                    <div className="col-6 col-md-4 col-lg-3" key={node.name}>
+                      <MediaCard
+                        name={node.path}
+                        path={node.path}
+                        type={node.type}
+                      />
+                    </div>
+                  </>
+                ))}
+                {/* image cards */}
+                {images.map((node) => (
+                  <>
+                    <div className="col-6 col-md-4 col-lg-3" key={node.name}>
+                      <MediaCardImg
+                        name={node.name}
+                        path={node.path}
+                        credit={node.credit}
+                        type={node.type}
+                      />
+                    </div>
+                  </>
+                ))}
               </div>
             </div>
           </div>

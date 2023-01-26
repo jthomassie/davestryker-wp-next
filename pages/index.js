@@ -48,7 +48,7 @@ const Index = ({ allPosts: { edges } }) => {
         </Head>
         <Container>
           <Intro />
-          <NavbarRb activeKey="/#top" />
+          <NavbarRb activeKey="/" />
           <div className="anchor" id="content" />
           <Icons />
           {/*  */}

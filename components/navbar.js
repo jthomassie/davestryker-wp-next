@@ -19,19 +19,16 @@ const NavbarRb = ({ activeKey }) => {
                 <Nav.Link as="a" href="/">
                   Home
                 </Nav.Link>
-                {/* <Nav.Link as="a" href="/#content">
-                  News
-                </Nav.Link> */}
-                <Nav.Link as="a" href="/shows#content">
+                <Nav.Link as="a" href="/shows">
                   Shows
                 </Nav.Link>
-                <Nav.Link as="a" href="/music#content">
+                <Nav.Link as="a" href="/music">
                   Music
                 </Nav.Link>
-                <Nav.Link as="a" href="/biography#content">
+                <Nav.Link as="a" href="/biography">
                   Biography
                 </Nav.Link>
-                <Nav.Link as="a" href="/media#content">
+                <Nav.Link as="a" href="/media">
                   Media kit
                 </Nav.Link>
               </Nav>

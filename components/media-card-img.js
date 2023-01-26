@@ -1,21 +1,26 @@
-// components/media-card.js
+// components/media-card-img.js
 
 import Image from "next/image";
 
-const MediaCard = ({ name, path, type }) => {
+const MediaCardImg = ({ name, path, credit, type }) => {
   return (
     <div>
       {/* card */}
       <div className="card lt-blue mb-4">
+        <Image
+          alt={`Media image of ${name}`}
+          src={path}
+          width={200}
+          height={200}
+          className="card-img-top"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
         <div className="card-body">
           <div className="media-card mb-3">
-            <span>
-              <i
-                className="bi bi-filetype-pdf bids-md pe-2"
-                title="Pdf file"
-              ></i>
-            </span>
-            {path}
+            Hi-res photo of {name} by {credit}.
           </div>
 
           <a
@@ -38,4 +43,4 @@ const MediaCard = ({ name, path, type }) => {
   );
 };
 
-export default MediaCard;
+export default MediaCardImg;

@@ -28,7 +28,7 @@ const Shows = ({ pageName: { edges } }) => {
         </Head>
         <Container>
           <Intro />
-          <NavbarRb activeKey="/shows#content" />
+          <NavbarRb activeKey="/shows" />
           <div className="anchor" id="content" />
           <Icons />
           {/*  */}

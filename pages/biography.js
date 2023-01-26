@@ -10,7 +10,9 @@ import Layout from "../components/layout";
 import NavbarRb from "../components/navbar";
 import Icons from "../components/icons";
 //
+import Avatar from "../components/avatar";
 import BiographyContent from "../components/biography-content";
+import Discography from "../components/discography";
 
 //
 const Biography = ({ pageName: { edges } }) => {
@@ -27,7 +29,7 @@ const Biography = ({ pageName: { edges } }) => {
         </Head>
         <Container>
           <Intro />
-          <NavbarRb activeKey="/biography#content" />
+          <NavbarRb activeKey="/biography" />
           <div className="anchor" id="content" />
 
           <Icons />
@@ -39,7 +41,16 @@ const Biography = ({ pageName: { edges } }) => {
                   <h1 className="display-4">Biography</h1>
                 </div>
                 <div className="row">
-                  <div className="col">
+                  <div className="col-12">
+                    <hr className="mb-4" />
+                    <Avatar
+                      author={node.author}
+                      date={node.date}
+                      className="d-inline p-2"
+                    />
+                  </div>
+
+                  <div className="col-12 col-md-8">
                     <BiographyContent
                       id={node.id}
                       title={node.title}
@@ -47,6 +58,9 @@ const Biography = ({ pageName: { edges } }) => {
                       author={node.author}
                       content={node.content}
                     />
+                  </div>
+                  <div className="col-12 col-md-4">
+                    <Discography />
                   </div>
                 </div>
               </div>

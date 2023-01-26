@@ -153,7 +153,7 @@ const Music = () => {
         </Head>
         <Container>
           <Intro />
-          <NavbarRb activeKey="/music-static#content" />
+          <NavbarRb activeKey="/music" />
           <div className="anchor" id="content" />
           <Icons />
           {/*  */}
