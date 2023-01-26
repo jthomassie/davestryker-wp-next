@@ -24,7 +24,7 @@ const Music = () => {
       sku: "8823",
       img: "/Prime-1024x933.jpg",
       uri: "album/prime",
-      types: "CD, MP3",
+      types: "CD, Vinyl, Digital download",
     },
     {
       title: "As We Are",
@@ -33,7 +33,7 @@ const Music = () => {
       sku: "8822",
       img: "/as_we_are_1200x1200.jpg",
       uri: "album/as-we-are",
-      types: "CD, Vinyl, MP3",
+      types: "CD, Vinyl, Digital download",
     },
     {
       title: "Baker's Circle",
@@ -42,7 +42,7 @@ const Music = () => {
       sku: "8821",
       img: "/Bakers-Circle-1024x914.jpg",
       uri: "album/bakers-circle",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Blue Soul",
@@ -51,7 +51,7 @@ const Music = () => {
       sku: "8820",
       img: "/Blue-Soul-1024x899.jpg",
       uri: "album/blue-soul",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Eight Track Christmas",
@@ -60,7 +60,7 @@ const Music = () => {
       sku: "8819",
       img: "/Eight-Track-Christmas-1024x907.jpg",
       uri: "album/eight-track-christmas",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Eight Track III",
@@ -69,7 +69,7 @@ const Music = () => {
       sku: "8818",
       img: "/Eight-Track-III-1024x921.jpg",
       uri: "album/eight-track-iii",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Strykin' Ahead",
@@ -78,7 +78,7 @@ const Music = () => {
       sku: "8815",
       img: "/Strykin-Ahead-1024x915.jpg",
       uri: "album/strykin-ahead",
-      types: "CD",
+      types: "CD, Vinyl, Digital download",
     },
     {
       title: "Eight Track II",
@@ -87,7 +87,7 @@ const Music = () => {
       sku: "8814",
       img: "/Eight-Track-II-1024x918.jpg",
       uri: "album/eight-track-iii",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Messin' with Mister T",
@@ -96,7 +96,7 @@ const Music = () => {
       sku: "8812",
       img: "/messin-1200x1030.jpg",
       uri: "album/messin-with-mister-t",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Eight Track",
@@ -105,7 +105,7 @@ const Music = () => {
       sku: "8809",
       img: "/eight-track-1196x2000.jpg",
       uri: "album/eight-track",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Six String Santa",
@@ -114,7 +114,7 @@ const Music = () => {
       sku: "8806",
       img: "/six-string-santa-700x700.jpg",
       uri: "album/six-string-santa",
-      types: "",
+      types: "Digital download",
     },
     {
       title: "The Guitar Artistry of Billy Rogers",
@@ -123,7 +123,7 @@ const Music = () => {
       sku: "8808A",
       img: "/the-guitar-artistry-of-billy-rogers-700x700.jpg",
       uri: "album/the-guitar-artistry-of-billy-rogers",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "Guitar On Top",
@@ -132,7 +132,7 @@ const Music = () => {
       sku: "8805",
       img: "/guitar-on-top-700x700.jpg",
       uri: "album/guitar-on-top",
-      types: "CD",
+      types: "Digital download",
     },
     {
       title: "First Strike",
@@ -141,10 +141,10 @@ const Music = () => {
       sku: "1011",
       img: "/first-strike-700x700.jpg",
       uri: "album/first-strike",
-      types: "CD",
+      types: "Digital download",
     },
     {
-      title: "Dave Stryker's Jazz Guitar Improvisation Method Vol III",
+      title: "Dave Stryker's Jazz Guitar Improvisation Method, Vol III",
       year: "2022",
       label: "Strikezone",
       sku: "9898",
@@ -180,12 +180,13 @@ const Music = () => {
                   <div className="col-6 col-md-4 col-lg-3" key={node.sku}>
                     <ProductCard
                       name={node.title}
-                      featuredimage={node.img}
+                      image={node.img}
                       width={1050}
                       height={1000}
                       sku={node.sku}
                       year={node.year}
                       label={node.label}
+                      types={node.types}
                       uri={node.uri}
                     />
                   </div>
