@@ -33,7 +33,7 @@ const ProductPreview = ({
             {year} • {label} {sku}
           </p>
           <a
-            href={`https://davestryker.bandcamp.com/album/${uri}`}
+            href={`https://davestryker.bandcamp.com/${uri}`}
             target="_blank"
             className="btn btn-primary btn-sm"
             rel="noreferrer"

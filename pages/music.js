@@ -15,16 +15,16 @@ import ProductCard from "../components/product-card";
 
 //
 const Music = () => {
-  // data
-  let recordings = [
+  // music data
+  let items = [
     {
       title: "Prime",
       year: "2023",
       label: "Strikezone Records",
       sku: "8823",
       img: "/Prime-1024x933.jpg",
-      uri: "prime",
-      types: "CD, Vinyl, MP3",
+      uri: "album/prime",
+      types: "CD, MP3",
     },
     {
       title: "As We Are",
@@ -32,7 +32,7 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8822",
       img: "/as_we_are_1200x1200.jpg",
-      uri: "as-we-are",
+      uri: "album/as-we-are",
       types: "CD, Vinyl, MP3",
     },
     {
@@ -41,8 +41,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8821",
       img: "/Bakers-Circle-1024x914.jpg",
-      uri: "bakers-circle",
-      types: "CD, Vinyl, MP3",
+      uri: "album/bakers-circle",
+      types: "CD",
     },
     {
       title: "Blue Soul",
@@ -50,8 +50,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8820",
       img: "/Blue-Soul-1024x899.jpg",
-      uri: "blue-soul",
-      types: "CD, Vinyl, MP3",
+      uri: "album/blue-soul",
+      types: "CD",
     },
     {
       title: "Eight Track Christmas",
@@ -59,8 +59,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8819",
       img: "/Eight-Track-Christmas-1024x907.jpg",
-      uri: "eight-track-christmas",
-      types: "CD, Vinyl, MP3",
+      uri: "album/eight-track-christmas",
+      types: "CD",
     },
     {
       title: "Eight Track III",
@@ -68,8 +68,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8818",
       img: "/Eight-Track-III-1024x921.jpg",
-      uri: "eight-track-iii",
-      types: "CD, Vinyl, MP3",
+      uri: "album/eight-track-iii",
+      types: "CD",
     },
     {
       title: "Strykin' Ahead",
@@ -77,8 +77,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8815",
       img: "/Strykin-Ahead-1024x915.jpg",
-      uri: "strykin-ahead",
-      types: "CD, Vinyl, MP3",
+      uri: "album/strykin-ahead",
+      types: "CD",
     },
     {
       title: "Eight Track II",
@@ -86,8 +86,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8814",
       img: "/Eight-Track-II-1024x918.jpg",
-      uri: "eight-track-iii",
-      types: "CD, Vinyl, MP3",
+      uri: "album/eight-track-iii",
+      types: "CD",
     },
     {
       title: "Messin' with Mister T",
@@ -95,8 +95,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8812",
       img: "/messin-1200x1030.jpg",
-      uri: "messin-with-mister-t",
-      types: "CD, Vinyl, MP3",
+      uri: "album/messin-with-mister-t",
+      types: "CD",
     },
     {
       title: "Eight Track",
@@ -104,8 +104,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8809",
       img: "/eight-track-1196x2000.jpg",
-      uri: "eight-track",
-      types: "CD, Vinyl, MP3",
+      uri: "album/eight-track",
+      types: "CD",
     },
     {
       title: "Six String Santa",
@@ -113,8 +113,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8806",
       img: "/six-string-santa-700x700.jpg",
-      uri: "six-string-santa",
-      types: "CD, Vinyl, MP3",
+      uri: "album/six-string-santa",
+      types: "",
     },
     {
       title: "The Guitar Artistry of Billy Rogers",
@@ -122,8 +122,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8808A",
       img: "/the-guitar-artistry-of-billy-rogers-700x700.jpg",
-      uri: "the-guitar-artistry-of-billy-rogers",
-      types: "CD, Vinyl, MP3",
+      uri: "album/the-guitar-artistry-of-billy-rogers",
+      types: "CD",
     },
     {
       title: "Guitar On Top",
@@ -131,8 +131,8 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8805",
       img: "/guitar-on-top-700x700.jpg",
-      uri: "guitar-on-top",
-      types: "CD, Vinyl, MP3",
+      uri: "album/guitar-on-top",
+      types: "CD",
     },
     {
       title: "First Strike",
@@ -140,8 +140,17 @@ const Music = () => {
       label: "Someday",
       sku: "1011",
       img: "/first-strike-700x700.jpg",
-      uri: "first-strike",
-      types: "CD, Vinyl, MP3",
+      uri: "album/first-strike",
+      types: "CD",
+    },
+    {
+      title: "Dave Stryker's Jazz Guitar Improvisation Method Vol III",
+      year: "2022",
+      label: "Strikezone",
+      sku: "9898",
+      img: "/jazz-guitar-improvisation-method-vol-iii-964x1248.jpg",
+      uri: "merch/dave-strykers-jazz-guitar-improvisation-method-vol-iii",
+      types: "Book",
     },
   ];
   //
@@ -167,7 +176,7 @@ const Music = () => {
               </div>
               {/*  */}
               <div className="row">
-                {recordings.map((node) => (
+                {items.map((node) => (
                   <div className="col-6 col-md-4 col-lg-3" key={node.sku}>
                     <ProductCard
                       name={node.title}
