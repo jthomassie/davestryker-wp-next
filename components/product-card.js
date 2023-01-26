@@ -33,7 +33,7 @@ const ProductPreview = ({
           <p className="card-text small-type m-0 mb-2">
             {year} • {label} {sku}
           </p>
-          <p className="bold m-0 mb-2">{types}</p>
+          <p className="bold m-0 mb-3">{types}</p>
           <a
             href={`https://davestryker.bandcamp.com/${uri}`}
             target="_blank"
