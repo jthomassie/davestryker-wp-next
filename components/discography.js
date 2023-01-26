@@ -7,7 +7,7 @@ const Discography = () => {
     <>
       <div className="border-start ps-4">
         <div className="mb-4">
-          <h6>Dave Stryker discography as a leader</h6>
+          <h6>Discography as a leader</h6>
           <ul className="list-unstyled-small">
             <li>First Strike (1988) Someday 1011 (Japanese)</li>
             <li>Strikezone (1990) SteepleChase 31277</li>
@@ -56,7 +56,7 @@ const Discography = () => {
         </div>
         {/* */}
         <div className="mb-4">
-          <h6>Dave Stryker partial discography with others</h6>
+          <h6>Discography with others</h6>
           <ul className="list-unstyled-small">
             <li>The Stryker/Slagle Band (2003) Khaeon World Music</li>
             <li>

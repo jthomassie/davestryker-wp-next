@@ -25,7 +25,7 @@ const Biography = ({ pageName: { edges } }) => {
     <>
       <Layout>
         <Head>
-          <title>Dave Stryker</title>
+          <title>Dave Stryker - Biography</title>
         </Head>
         <Container>
           <Intro />
