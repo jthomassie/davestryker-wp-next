@@ -86,7 +86,7 @@ const Music = () => {
       label: "Strikezone Records",
       sku: "8814",
       img: "/Eight-Track-II-1024x918.jpg",
-      uri: "album/eight-track-iii",
+      uri: "album/eight-track-ii",
       types: "Digital download",
     },
     {
@@ -150,7 +150,7 @@ const Music = () => {
       sku: "9898",
       img: "/jazz-guitar-improvisation-method-vol-iii-964x1248.jpg",
       uri: "merch/dave-strykers-jazz-guitar-improvisation-method-vol-iii",
-      types: "Book",
+      types: "Book, pdf",
     },
   ];
   //

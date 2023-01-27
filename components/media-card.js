@@ -17,9 +17,8 @@ const MediaCard = ({ name, path, type }) => {
             </span>
             {path}
           </div>
-
           <a
-            href={path}
+            href={`/${path}`}
             className="btn btn-primary btn-sm"
             rel="noreferrer"
             download

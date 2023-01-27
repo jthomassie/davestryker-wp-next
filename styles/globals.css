@@ -35,6 +35,9 @@ a:active {
 .small-type {
   font-size: 0.8rem;
 }
+.med-type {
+  font-size: 0.9rem;
+}
 
 .btn-primary {
   color: #fff !important;

@@ -15,17 +15,17 @@ const Media = () => {
   let files = [
     {
       name: "Dave Stryker full biography",
-      path: "/dave-stryker-full-bio-2023.pdf",
+      path: "dave-stryker-full-biography.pdf",
       type: "pdf",
     },
     {
       name: "Dave Stryker short biography",
-      path: "/dave-stryker-short-bio-2023.pdf",
+      path: "dave-stryker-short-bio-2023.pdf",
       type: "pdf",
     },
     {
       name: "Dave Stryker discography",
-      path: "/dave-stryker-discography-2023.pdf",
+      path: "dave-stryker-discography-2023.pdf",
       type: "pdf",
     },
   ];
