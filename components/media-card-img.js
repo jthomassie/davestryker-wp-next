@@ -31,7 +31,7 @@ const MediaCardImg = ({ name, path, credit, type }) => {
           >
             <span>
               <i
-                className="bi bi-file-earmark-arrow-down-fill bids-sm pe-2"
+                className="bi bi-file-earmark-arrow-down-fill bids-sm pe-1"
                 title="Download"
               ></i>
             </span>
