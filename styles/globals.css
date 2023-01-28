@@ -76,7 +76,8 @@ a:active {
   color: #eee !important;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 0.3rem 0.8rem !important;
+  padding: 0.4rem 0.8rem !important;
+  margin: 0.2rem 0.2rem;
 }
 
 .nav-link:hover {
