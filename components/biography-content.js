@@ -8,7 +8,7 @@ const BiographyPg = ({ id, title, date, author, content }) => {
   //
   return (
     <>
-      <div className="col-5 col-lg-4 float-end mt-1 ms-4 mb-4cover-img">
+      <div className="col-5 col-lg-4 float-end mt-1 ms-4 mb-4 cover-img">
         <Image
           src={davevert}
           alt={`Dave Stryker`}

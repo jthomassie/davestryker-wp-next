@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import cover from "../public/cover3-dave-stryker.jpg";
+import cover from "../public/cover5-dave-stryker.jpg";
 import strikezone from "../public/strikezone-logo-white-sm.png";
 
 const Intro = () => {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid baseline">
         <div className="row">
           <div className="col-12 px-0">
             <div className="position-relative">

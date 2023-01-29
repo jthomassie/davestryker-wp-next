@@ -61,6 +61,10 @@ a:active {
   background-color: #3d5f8f;
 }
 
+.baseline {
+  border-bottom: 1px solid #0e2c51;
+}
+
 .navbar-dark {
   background-color: #000 !important;
 }
@@ -80,8 +84,35 @@ a:active {
   margin: 0.2rem 0.2rem;
 }
 
+.footer-nav .nav-link {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #c2c7cd !important;
+}
+
 .nav-link:hover {
   background-color: #11284e;
+}
+.footer-nav .nav-link:hover {
+  background-color: none !important;
+}
+
+.list-inline-item a:link {
+  color: #c2c7cd !important;
+  text-decoration: none;
+}
+.list-inline-item a:visited {
+  color: #c2c7cd !important;
+  text-decoration: none;
+}
+.list-inline-item a:hover {
+  color: #c2c7cd !important;
+  text-decoration: none;
+}
+.list-inline-item a:active {
+  color: #c2c7cd !important;
+  text-decoration: none;
 }
 
 .navbar-nav .show > .nav-link,
@@ -93,7 +124,7 @@ footer,
 footer div,
 footer p {
   background-color: #58606c;
-  color: #b4bac3;
+  color: #c2c7cd;
   min-height: 6rem;
 }
 
@@ -296,4 +327,9 @@ hr {
 
 .media-card {
   font-size: 0.9rem;
+  line-height: 1.2;
+}
+.side-bar {
+  padding: 1.5rem;
+  background-color: #2e5394;
 }

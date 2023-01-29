@@ -61,6 +61,18 @@ const Media = () => {
       credit: "Steven Peterson",
       type: "jpg",
     },
+    {
+      name: "Dave Stryker Trio",
+      path: "/dave-stryker-trio-1.jpg",
+      credit: "Chris Drukker",
+      type: "jpg",
+    },
+    {
+      name: "Dave Stryker Trio",
+      path: "/dave-stryker-trio-2.jpg",
+      credit: "Chris Drukker",
+      type: "jpg",
+    },
   ];
 
   return (

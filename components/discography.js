@@ -5,7 +5,7 @@ const Discography = () => {
   //
   return (
     <>
-      <div className="border-start ps-4">
+      <div className="side-bar mt-1 ps-3-md">
         <div className="mb-4">
           <h6>Discography as a leader</h6>
           <ul className="list-unstyled-small">

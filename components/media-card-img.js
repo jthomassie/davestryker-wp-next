@@ -20,7 +20,7 @@ const MediaCardImg = ({ name, path, credit, type }) => {
         />
         <div className="card-body">
           <div className="media-card mb-3">
-            Hi-res photo of {name} by {credit}.
+            Hi-res photo of {name} by {credit}
           </div>
 
           <a
