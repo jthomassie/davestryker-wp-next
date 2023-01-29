@@ -125,7 +125,6 @@ footer div,
 footer p {
   background-color: #58606c;
   color: #c2c7cd;
-  min-height: 6rem;
 }
 
 .wp-block-quote {
@@ -181,7 +180,7 @@ hr {
 }
 
 .mr-75pct {
-  margin-right: 85%;
+  margin-right: 75%;
 }
 
 .avatar {

@@ -23,7 +23,7 @@ const Intro = () => {
                   height: "auto",
                 }}
               />
-              {/* logo */}
+              {/* strikezone logo */}
               <div className="img-overlay-logo w-100">
                 <div className="container">
                   <div className="row">

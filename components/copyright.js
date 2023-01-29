@@ -5,7 +5,12 @@ import { format } from "date-fns";
 //
 const Copyright = () => {
   const date = new Date();
-  return <div>© {format(date, "yyyy")} Dave Stryker</div>;
+  return (
+    <div>
+      © {format(date, "yyyy")} Dave Stryker, Strikezone Records • All rights
+      reserved
+    </div>
+  );
 };
 
 //
