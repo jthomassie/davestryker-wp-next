@@ -83,8 +83,8 @@ module.exports = (phase, { defaultConfig }) => {
           pathname: "/**",
         },
         {
-          protocol: "https",
-          hostname: "www.stage2.davestryker.com",
+          protocol: "http",
+          hostname: "stage2.davestryker.com",
           pathname: "/**",
         },
         {
