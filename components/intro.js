@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import cover from "../public/cover5-dave-stryker.jpg";
+import cover from "../public/cover6-dave-stryker.jpg";
 import strikezone from "../public/strikezone-logo-white-sm.png";
 
 const Intro = () => {
