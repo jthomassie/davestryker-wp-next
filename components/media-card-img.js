@@ -6,7 +6,7 @@ const MediaCardImg = ({ name, path, credit, type }) => {
   return (
     <div>
       {/* card */}
-      <div className="card lt-blue mb-4">
+      <div className="card lt-blue mb-4 type-shadow">
         <Image
           alt={`Media image of ${name}`}
           src={path}

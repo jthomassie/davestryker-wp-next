@@ -16,7 +16,7 @@ const ProductPreview = ({
   return (
     <div>
       {/* card */}
-      <div className="card lt-blue mb-3">
+      <div className="card lt-blue mb-3 type-shadow">
         <Image
           alt={`Cover image for ${name}`}
           src={image}

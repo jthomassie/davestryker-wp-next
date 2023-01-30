@@ -27,7 +27,7 @@ const Intro = () => {
               <div className="img-overlay-logo w-100">
                 <div className="container">
                   <div className="row">
-                    <div className="col-3 offset-9 pt-3 pt-md-4 opacity-75">
+                    <div className="col-3 offset-9 pt-3 pt-md-4 opacity-75 text-right">
                       <Link
                         href="https://www.strikezonerecords.com"
                         target="_blank"
@@ -36,8 +36,8 @@ const Intro = () => {
                         <Image
                           src={strikezone}
                           alt="Strikezone Records logo"
-                          width={145}
-                          height={81}
+                          width={290}
+                          height={162}
                           style={{
                             maxWidth: "100%",
                             height: "auto",
@@ -53,7 +53,9 @@ const Intro = () => {
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
-                      <h1 className="display-2 mb-1">Dave Stryker</h1>
+                      <h1 className="display-2 mb-1 type-shadow">
+                        Dave Stryker
+                      </h1>
                     </div>
                   </div>
                 </div>

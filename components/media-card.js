@@ -6,7 +6,7 @@ const MediaCard = ({ name, path, type }) => {
   return (
     <div>
       {/* card */}
-      <div className="card lt-blue mb-4">
+      <div className="card lt-blue mb-4  type-shadow">
         <div className="card-body">
           <div className="media-card mb-3">
             <span>
