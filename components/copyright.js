@@ -7,8 +7,8 @@ const Copyright = () => {
   const date = new Date();
   return (
     <div>
-      © {format(date, "yyyy")} Dave Stryker, Strikezone Records • All rights
-      reserved
+      © {format(date, "yyyy")} Dave Stryker, Strikezone Records <br />• All
+      rights reserved
     </div>
   );
 };

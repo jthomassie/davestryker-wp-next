@@ -36,7 +36,7 @@ const Footer = () => {
             <Copyright />
           </div>
           {/* strikezone logo */}
-          <div className="col pt-3 opacity-75">
+          <div className="col-5 col-md-4 pt-4 opacity-75">
             <Link
               href="https://www.strikezonerecords.com"
               target="_blank"
@@ -45,8 +45,8 @@ const Footer = () => {
               <Image
                 src={strikezone}
                 alt="Strikezone Records logo"
-                width={145}
-                height={81}
+                width={290}
+                height={162}
                 style={{
                   maxWidth: "100%",
                   height: "auto",
