@@ -78,6 +78,11 @@ module.exports = (phase, { defaultConfig }) => {
       //
       remotePatterns: [
         {
+          protocol: "http",
+          hostname: "www.stage2.davestryker.com",
+          pathname: "/**",
+        },
+        {
           protocol: "https",
           hostname: "www.stage2.davestryker.com",
           pathname: "/**",
