@@ -28,8 +28,7 @@ module.exports = (phase, { defaultConfig }) => {
           "1.gravatar.com",
           "2.gravatar.com",
           "secure.gravatar.com",
-          "www.stage2.davestryker.com",
-          "www.stage1.davestryker.com",
+          "www.davestryker.net",
           "www.davestryker.com",
         ],
       },
@@ -79,12 +78,12 @@ module.exports = (phase, { defaultConfig }) => {
       remotePatterns: [
         {
           protocol: "https",
-          hostname: "www.stage2.davestryker.com",
+          hostname: "www.davestryker.net",
           pathname: "/**",
         },
         {
           protocol: "https",
-          hostname: "stage2.davestryker.com",
+          hostname: "davestryker.net",
           pathname: "/**",
         },
         {
