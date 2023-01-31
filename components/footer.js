@@ -27,13 +27,26 @@ const Footer = () => {
                 <Link href="/biography"> Biography •</Link>
               </li>
               <li className="list-inline-item">
-                <Link href="/media"> Media kit </Link>
+                <Link href="/media"> Media kit</Link>
               </li>
             </ul>
           </div>
           {/* copyright */}
           <div className="col-12">
             <Copyright />
+          </div>
+          {/* design credit */}
+          <div className="col-12">
+            <p>
+              Site design by{" "}
+              <a
+                href="https://www.data-visual.net/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Data-Visual
+              </a>
+            </p>
           </div>
           {/* strikezone logo */}
           <div className="col-5 col-md-4 pt-4 opacity-75 text-shadow">

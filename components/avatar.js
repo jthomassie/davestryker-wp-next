@@ -15,7 +15,7 @@ const Avatar = ({ date, author }) => {
 
   //
   return (
-    <div className=" mb-5">
+    <div className=" mb-4">
       <div className="d-flex align-items-center">
         <Image
           src={author.node.avatar.url}
