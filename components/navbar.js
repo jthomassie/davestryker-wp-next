@@ -17,7 +17,7 @@ const NavbarRb = ({ activeKey }) => {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto" defaultActiveKey={activeKey}>
                 <Nav.Link as="a" href="/">
-                  Home
+                  News
                 </Nav.Link>
                 <Nav.Link as="a" href="/shows">
                   Shows

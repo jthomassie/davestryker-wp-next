@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="col-12">
             <ul className="list-inline">
               <li className="list-inline-item">
-                <Link href="/">Home •</Link>
+                <Link href="/">News •</Link>
               </li>
               <li className="list-inline-item">
                 <Link href="/shows"> Shows •</Link>

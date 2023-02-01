@@ -10,14 +10,14 @@ const HeroPost = ({ title, featuredImage, date, content, author, slug }) => {
     <>
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-12">
             <h6 className="h5-caps mb-4">Featured news post</h6>
             <h2 dangerouslySetInnerHTML={{ __html: title }} />
             <Avatar author={author} date={date} />
             <div className="container">
               <div className="row">
-                <div className="col-12 px-0">
-                  <div className="col-5 col-lg-6 float-end mt-1 ms-4 mb-4">
+                <div className="col-12 col-lg-11 px-0">
+                  <div className="col-5 col-lg-4 float-end mt-1 ms-4 mb-4">
                     <CoverImage
                       title={title}
                       coverImage={featuredImage}

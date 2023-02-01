@@ -37,13 +37,13 @@ const Shows = ({ pageName: { edges } }) => {
               <div className="row">
                 <div className="col-12">
                   <h1 className="display-4">Shows</h1>
-                </div>
-                <hr className="mb-4" />
-                <Avatar
+                  <hr className="mb-2" />
+                  {/* <Avatar
                   author={node.author}
                   date={node.date}
                   className="d-inline p-2"
-                />
+                  /> */}
+                </div>
                 <ShowsClean content={node.content} />
               </div>
             </div>

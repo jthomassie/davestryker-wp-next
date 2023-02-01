@@ -12,7 +12,8 @@ import NavbarRb from "../components/navbar";
 import Icons from "../components/icons";
 //
 import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
+// import HeroPost from "../components/hero-post";
+import FeaturedPost from "../components/featured-post-test";
 // import { postsData } from "../data/posts-pages";
 
 //
@@ -37,23 +38,22 @@ const Index = ({ allPosts: { edges } }) => {
   const morePosts = allPosts.filter((o) => {
     return o.node.cats.indexOf("Featured") == -1;
   });
-  // console.log("morePosts", morePosts);
 
   //
   return (
     <>
       <Layout>
         <Head>
-          <title>Dave Stryker - Home</title>
+          <title>Dave Stryker - News</title>
         </Head>
         <Container>
           <Intro />
           <NavbarRb activeKey="/" />
-          <div className="anchor" id="content" />
           <Icons />
           {/*  */}
           {featuredPost && (
-            <HeroPost
+            <FeaturedPost
+              index={0}
               title={featuredPost.title}
               featuredImage={featuredPost.featuredImage}
               date={featuredPost.date}

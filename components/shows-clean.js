@@ -48,7 +48,7 @@ const ShowsPg = ({ content }) => {
   //
   return (
     <div
-      className="mt-3 mb-6 shows-content"
+      className="mt-3 mb-3 shows-content"
       dangerouslySetInnerHTML={{ __html: editContent }}
     ></div>
   );

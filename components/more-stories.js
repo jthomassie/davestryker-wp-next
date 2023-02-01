@@ -1,6 +1,7 @@
 // components/more-stories.js
 
-import PostPreview from "./post-preview";
+// import PostPreview from "./post-preview";
+import FeaturedPost from "../components/featured-post-test";
 
 const MoreStories = ({ posts }) => {
   return (
@@ -12,19 +13,16 @@ const MoreStories = ({ posts }) => {
       </div>
 
       <div className="row">
-        {posts.map(({ node }) => (
-          <PostPreview
-            key={node.slug}
+        {posts.map(({ node }, i) => (
+          <FeaturedPost
+            key={i}
+            index={i + 1}
             title={node.title}
-            coverImage={node.featuredImage}
+            featuredImage={node.featuredImage}
             date={node.date}
             author={node.author}
-            slugid={node.id}
             slug={node.slug}
-            excerpt={node.excerpt}
             content={node.content}
-            width={2000}
-            height={1300}
           />
         ))}
       </div>
