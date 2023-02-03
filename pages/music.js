@@ -1,8 +1,5 @@
 // pages/music.js
 
-// import { useEffect } from "react";
-// import { GetStaticProps } from "next";
-// import { getAllProducts } from "../lib/api";
 //
 import Head from "next/head";
 import Container from "../components/container";

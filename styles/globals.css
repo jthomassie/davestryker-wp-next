@@ -336,3 +336,7 @@ hr {
 .type-shadow {
   filter: drop-shadow(3px 3px 5px #13212e);
 }
+
+.lt-bg {
+  background-color: #a6b2c1;
+}

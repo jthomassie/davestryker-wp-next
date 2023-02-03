@@ -36,6 +36,7 @@ const cleanHtml = (str) => {
     '</p></div><div class="col-12"><hr></div></div>'
   );
   editContent = editContent.replace(/<a  href=\\"https/g, '<a href="https');
+  editContent = editContent.replace(/\\/g, "");
   editContent = editContent.replace(/.com\/\\"/g, '.com/"');
   editContent = _.trimStart(editContent, '"');
   editContent = _.trimEnd(editContent, '"');

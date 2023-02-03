@@ -1,0 +1,6 @@
+// ignore/mongo.txt
+
+mongoimport \
+  --uri=mongodb+srv://MapDataUser:W7TYVcupJK1qWU@cluster0.2tkfm.mongodb.net/strikezone \
+  --collection=shows2 \
+  --jsonArray --file showsdata.json
