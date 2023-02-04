@@ -115,6 +115,7 @@ module.exports = (phase, { defaultConfig }) => {
         "/shows": { page: "/shows" },
         "/music": { page: "/music" },
         "/media": { page: "/media" },
+        "/api/allshows": { page: "/api/allshows" },
       };
     },
   };
