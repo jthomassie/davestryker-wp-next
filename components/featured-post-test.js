@@ -33,7 +33,7 @@ const FeaturedPost = ({
               <Avatar author={author} date={date} />
             </div>
             {/* left col story */}
-            <div className="col-12">
+            <div className="col-12 mb-6">
               <div className="col-5 float-end mt-2 ms-4 mb-3">
                 <CoverImage
                   title={title}
@@ -49,10 +49,10 @@ const FeaturedPost = ({
               />
             </div>
 
-            {/* full width */}
+            {/* full width
             <div className="col-12">
               <hr className="mt-6 mb-6" />
-            </div>
+            </div>  */}
           </div>
         </div>
       </>
@@ -70,7 +70,7 @@ const FeaturedPost = ({
             <Avatar author={author} date={date} />
           </div>
           {/* left col story */}
-          <div className="col-12 x-0">
+          <div className="col-12 x-0 mb-6">
             <div className="col-5 float-start mt-2 me-4 mb-3">
               <CoverImage
                 title={title}
@@ -85,10 +85,10 @@ const FeaturedPost = ({
               dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>
-          {/* full width */}
+          {/* full width
           <div className="col-12">
             <hr className="mt-6 mb-6" />
-          </div>
+          </div>  */}
         </div>
       </div>
     </>

@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Dave Stryker" />
         <meta name="robots" content="all" />
