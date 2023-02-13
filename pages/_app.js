@@ -1,6 +1,7 @@
 // pages/_app.js
 
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 import "../styles/global-vars.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/globals.css";
@@ -24,6 +25,7 @@ const App = ({ Component, pageProps }) => {
         <meta name="google" content="notranslate" key="notranslate" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 };
