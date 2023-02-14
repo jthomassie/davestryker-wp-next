@@ -1,0 +1,5 @@
+// public/robots.txt
+
+# Allow all crawlers
+User-agent: *
+Allow: /
