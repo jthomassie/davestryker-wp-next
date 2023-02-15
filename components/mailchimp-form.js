@@ -29,8 +29,8 @@ const CustomForm = ({ status, message, onValidated }) => {
     setFirstName(e.target.firstName.value);
     setLastName(e.target.lastName.value);
     //
-    console.log(email, firstName, lastName);
-    console.log(status, message, onValidated);
+    // console.log(email, firstName, lastName);
+    // console.log(status, message, onValidated);
     //
     email &&
       firstName &&
@@ -57,7 +57,7 @@ const CustomForm = ({ status, message, onValidated }) => {
   };
   //
   useEffect(() => {
-    console.log("UE", status, modalOpen);
+    // console.log("UE", status, modalOpen);
     if (status === "success") clearFields();
     if (modalOpen && status === "success") clearFields();
   }, [status, modalOpen]);
@@ -138,9 +138,9 @@ const CustomForm = ({ status, message, onValidated }) => {
                     </Form.Group>
                   </Row>
 
-                  <div class="row justify-content-center">
-                    <div class="col col-md-6 col-lg-4">
-                      <div class="d-grid">
+                  <div className="row justify-content-center">
+                    <div className="col col-md-6 col-lg-4">
+                      <div className="d-grid">
                         <Button
                           className=""
                           variant="outline-primary"
@@ -155,7 +155,7 @@ const CustomForm = ({ status, message, onValidated }) => {
               ) : null}
               {/* close button appears if form was successfully sent */}
               {status === "success" ? (
-                <div class="d-grid">
+                <div className="d-grid">
                   <button
                     type="button"
                     className="btn btn-outline-primary mt-3"

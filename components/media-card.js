@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const MediaCard = ({ name, path, type }) => {
   return (
-    <div>
+    <>
       {/* card */}
       <div className="card lt-blue mb-4 type-shadow">
         <div className="card-body">
@@ -33,7 +33,7 @@ const MediaCard = ({ name, path, type }) => {
           </a>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

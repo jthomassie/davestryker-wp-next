@@ -92,7 +92,7 @@ const Media = () => {
               <div className="row">
                 <div className="col-12">
                   <h1 className="display-4">Media kit</h1>
-                  <hr class="mb-4" />
+                  <hr className="mb-4" />
                 </div>
                 <div className="col-12">
                   <p className="">
@@ -101,29 +101,27 @@ const Media = () => {
                   </p>
                 </div>
                 {/* file cards */}
-                {files.map((node) => (
-                  <>
-                    <div className="col-6 col-md-4 col-lg-3" key={node.name}>
-                      <MediaCard
-                        name={node.path}
-                        path={node.path}
-                        type={node.type}
-                      />
-                    </div>
-                  </>
+                {files.map((node, i) => (
+                  <div className="col-6 col-md-4 col-lg-3" key={`pdf-${i}`}>
+                    <MediaCard
+                      key={`pdf-${i}`}
+                      name={node.path}
+                      path={node.path}
+                      type={node.type}
+                    />
+                  </div>
                 ))}
                 {/* image cards */}
-                {images.map((node) => (
-                  <>
-                    <div className="col-6 col-md-4 col-lg-3" key={node.name}>
-                      <MediaCardImg
-                        name={node.name}
-                        path={node.path}
-                        credit={node.credit}
-                        type={node.type}
-                      />
-                    </div>
-                  </>
+                {images.map((node, i) => (
+                  <div className="col-6 col-md-4 col-lg-3" key={`img-${i}`}>
+                    <MediaCardImg
+                      key={`img-${i}`}
+                      name={node.name}
+                      path={node.path}
+                      credit={node.credit}
+                      type={node.type}
+                    />
+                  </div>
                 ))}
               </div>
             </div>
