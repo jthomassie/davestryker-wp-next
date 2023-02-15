@@ -142,11 +142,11 @@ const Discography = () => {
               Jimmy Duchowny Organ Trio / The Brazilian Sessions / JD Records
             </li>
             <li>Jared Gold (2010) Out of Line / Posi-Tone PR 8067</li>
+            <li>Alberto Pibiri (2012) NYC / Strikezone Records 8808</li>
             <li>Jared Gold (2013) Intuition / Posi-Tone PR 8105</li>
+            <li>Matt Kane (2013) Suit Up / Bounce-Step Records 013</li>
             <li>Jared Gold (2014) JG3 + 3 / Posi-Tone PR 8122</li>
             <li>Jared Gold (2015) Metropolitan Rhythm / Posi-Tone PR 8138</li>
-            <li>Matt Kane (2013) Suit Up / Bounce-Step Records 013</li>
-            <li>Alberto Pibiri (2012) NYC / Strikezone Records 8808</li>
             <li>
               Rondi Charleston (2011) Who Knows Where the Time Goes / Motema
               (also producer)
@@ -156,12 +156,28 @@ const Discography = () => {
               producer)
             </li>
             <li>
+              Joshua Shneider Love Speaks Orchestra (2013) BJU Records BJUR 038
+            </li>
+            <li>Giacomo Gates (2013) Milestones / Savant SCD 2124</li>
+            <li>
+              Vanessa Rubin and Don Braden (2013) Full Circle / Creative
+              Perspective Music CPM 1002
+            </li>
+            <li>
               Rachel Caswell (2015) All I Know / Turtle Ridge Records Trr 002
               (also producer)
             </li>
             <li>
-              Rachel Caswell (2018) We're all in the Dance / Turtle Ridge
+              Rachel Caswell (2018) We're All in the Dance / Turtle Ridge
               Records Trr 003 (also producer)
+            </li>
+            <li>
+              Jared Gold (2018) Reemergence / Strikezone Records 8817 (also
+              producer)
+            </li>
+            <li>
+              McClenty Hunter (2018) The Groove Hunter / Strikezone Records 8816
+              (also producer)
             </li>
             <li>
               Steve Johns (2015) Family / Strikezone Records 8811 (also
@@ -169,21 +185,17 @@ const Discography = () => {
             </li>
             <li>Christian Finger (2015) Ananda/ Strikezone Records 8810</li>
             <li>
-              Joshua Shneider Love Speaks Orchestra (2013) BJU Records BJUR 038
-            </li>
-            <li>Giacomo Gates (2013) Milestones / Savant SCD 2124</li>
-            <li>Charenee Wade (2015) Offering / Motema</li>
-            <li>
-              Vanessa Rubin and Don Braden (2013) Full Circle / Creative
-              Perspective Music CPM 1002
-            </li>
-            <li>
               Don Braden Organix Quartet (2015) Luminosity / Creative
               Perspective Music CPM 3003
             </li>
+            <li>Charenee Wade (2015) Offering / Motema</li>
             <li>
               Kendall Carter (2021) Introducing Kendall Carter/ Lladnek Music
               0321
+            </li>
+            <li>
+              Kate Baker and Vic Juris (2022) Return to Shore / Strikezone
+              Records 8825 (producer)
             </li>
           </ul>
         </div>

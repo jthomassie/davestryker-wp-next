@@ -50,7 +50,7 @@ const Biography = ({ pageName: { edges } }) => {
                     />
                   </div>
 
-                  <div className="col-12 col-md-8">
+                  <div className="col-12 col-md-7">
                     <BiographyContent
                       id={node.id}
                       title={node.title}
@@ -59,7 +59,7 @@ const Biography = ({ pageName: { edges } }) => {
                       content={node.content}
                     />
                   </div>
-                  <div className="col-12 col-md-4">
+                  <div className="col-12 col-md-5">
                     <Discography />
                   </div>
                 </div>
