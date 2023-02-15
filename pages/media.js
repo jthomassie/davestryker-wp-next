@@ -104,7 +104,6 @@ const Media = () => {
                 {files.map((node, i) => (
                   <div className="col-6 col-md-4 col-lg-3" key={`pdf-${i}`}>
                     <MediaCard
-                      key={`pdf-${i}`}
                       name={node.path}
                       path={node.path}
                       type={node.type}
@@ -115,7 +114,6 @@ const Media = () => {
                 {images.map((node, i) => (
                   <div className="col-6 col-md-4 col-lg-3" key={`img-${i}`}>
                     <MediaCardImg
-                      key={`img-${i}`}
                       name={node.name}
                       path={node.path}
                       credit={node.credit}
