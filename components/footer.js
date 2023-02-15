@@ -49,7 +49,7 @@ const Footer = () => {
             </p>
           </div>
           {/* strikezone logo */}
-          <div className="col-5 col-md-4 pt-4 opacity-75 text-shadow">
+          <div className="col-6 col-md-5 col-lg-4 pt-4 opacity-75 text-shadow">
             <Link
               href="https://www.strikezonerecords.com"
               target="_blank"
