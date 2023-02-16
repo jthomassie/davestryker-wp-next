@@ -11,7 +11,7 @@ const NavbarRb = ({ activeKey }) => {
   return (
     <>
       <div className="my-0 sticky-top">
-        <Navbar expand="md" variant="dark">
+        <Navbar variant="dark">
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
