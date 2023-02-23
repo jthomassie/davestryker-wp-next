@@ -1,15 +1,47 @@
 // components/show-show.js
 
 import { useGetPosts } from "../components/useRequest";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
-const ShowShow = ({ show, key }) => {
+const editShow = (e) => {
+  e.preventDefault();
+  console.log("editShow", e);
+};
+
+const ShowShow = ({ show }) => {
   //
-  const { posts, error } = useGetPosts("/api/allshows?lastdate=2023-03-17");
+  const [publishing, setPublishing] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const router = useRouter();
+
+  const { posts, error } = useGetPosts("/api/shows");
+
+  // delete post
+  const deleteShow = async (postId) => {
+    // change deleting state
+    console.log("deleteShow", postId, router.asPath);
+    setDeleting(true);
+    try {
+      // delete post
+      await fetch("/api/shows", {
+        method: "DELETE",
+        body: postId,
+      });
+      // reset deleting state
+      setDeleting(false);
+      // reload page
+      return router.push(router.asPath);
+    } catch (error) {
+      // stop deleting state
+      return setDeleting(false);
+    }
+  };
 
   //
   return (
     <>
-      <div className="row" key={key}>
+      <div className="row">
         {/* date/times */}
         <div className="col-12">
           <div className="shows-date">{show.date1}</div>
@@ -69,7 +101,7 @@ const ShowShow = ({ show, key }) => {
               id="delete"
               data-id={show._id}
               onClick={(e) => {
-                deleteShow(e);
+                deleteShow(show._id);
               }}
               className="btn btn-sm btn-secondary m-1"
             >
@@ -89,7 +121,7 @@ const ShowShow = ({ show, key }) => {
           </div>
         </div>
 
-        {/*  */}
+        {/* hr */}
         <div className="col-12">
           <hr />
         </div>

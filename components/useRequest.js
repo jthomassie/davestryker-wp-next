@@ -9,10 +9,7 @@ export const useGetPosts = (path) => {
   if (!path) {
     throw new Error("Path is required");
   }
-
   const url = baseUrl + path;
-
   const { data: shows, error } = useSWR(url, fetcher);
-
   return { shows, error };
 };

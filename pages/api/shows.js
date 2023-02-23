@@ -1,10 +1,12 @@
+// https://www.section.io/engineering-education/build-nextjs-with-mongodb-and-deploy-on-vercel/
+// https://github.com/Rose-stack/nextjs-blog-app-with-mongodb
 // pages/api/new-show.js
 
 import { format } from "date-fns";
 
 const { connectToStrikezone } = require("../../lib/strikezone");
-const ObjectId = require("mongodb").ObjectId;
 const COL = "shows2";
+const ObjectId = require("mongodb").ObjectId;
 
 const handler = async (req, res) => {
   // switch the methods

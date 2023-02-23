@@ -1,8 +1,13 @@
 /* styles/global.css */
 
-body {
+.blue-base {
   background-color: #1c3f7c;
   color: #fff;
+}
+
+.white-base {
+  background-color: #999;
+  color: #000 !important;
 }
 
 .bold {
