@@ -15,8 +15,8 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Shows = () => {
   const { data, error } = useSWR("/api/shows", fetcher);
   //
-  if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading...</div>;
+  // if (error) return <div>Failed to load</div>;
+  // if (!data) return <div>Loading...</div>;
   //
   return (
     <>
@@ -37,7 +37,10 @@ const Shows = () => {
                   <h1 className="display-4">Shows</h1>
                   <hr className="my-4" />
                   {/*  */}
-                  {data.shows.length === 0 ? (
+                  {error ? <p>Failed to load</p> : null}
+                  {!data ? (
+                    <p>Loading...</p>
+                  ) : data.shows.length === 0 ? (
                     <h2>No added posts</h2>
                   ) : (
                     <ul className="list-unstyled">
