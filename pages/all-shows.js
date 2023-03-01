@@ -24,7 +24,24 @@ const AllShows = () => {
                   data.shows.map((d) => (
                     //
                     <li key={d._id}>
-                      <ShowShow show={d} />
+                      <ShowShow
+                        id={d._id}
+                        date1={d.date1}
+                        date2={d.date2}
+                        lastdate={d.lastdate}
+                        venue={d.venue}
+                        website={d.website}
+                        address1={d.address1}
+                        address2={d.address2}
+                        phone={d.phone}
+                        group={d.group}
+                        musician1={d.musician1}
+                        musician2={d.musician2}
+                        musician3={d.musician3}
+                        musician4={d.musician4}
+                        musician5={d.musician5}
+                        musician6={d.musician6}
+                      />
                     </li>
                   ))}
               </ul>

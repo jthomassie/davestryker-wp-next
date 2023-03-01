@@ -6,39 +6,59 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { useRouter } from "next/router";
 
+//
 const AddShow = () => {
   //
-  const [date1, setDate1] = useState("");
-  const [date2, setDate2] = useState("");
-  const [lastdate, setLastdate] = useState("");
-  const [venue, setVenue] = useState("");
-  const [website, setWebsite] = useState("");
-  const [address1, setAddress1] = useState("");
-  const [address2, setAddress2] = useState("");
-  const [phone, setPhone] = useState("");
-  const [group, setGroup] = useState("");
-  const [musician1, setMusician1] = useState("");
-  const [musician2, setMusician2] = useState("");
-  const [musician3, setMusician3] = useState("");
-  const [musician4, setMusician4] = useState("");
-  const [musician5, setMusician5] = useState("");
-  const [musician6, setMusician6] = useState("");
+  const router = useRouter();
+  // let show = decodeURI(router.query.show);
+  // let id = decodeURI(router.query.id);
+  // let v = decodeURI(router.query.v);
+
+  let rQid = decodeURI(router.query.id);
+  let rQdate1 = decodeURI(router.query.date1);
+  let rQdate2 = decodeURI(router.query.date2);
+  let rQlastdate = decodeURI(router.query.lastdate);
+  let rQvenue = decodeURI(router.query.venue);
+  let rQwebsite = decodeURI(router.query.website);
+  let rQaddress1 = decodeURI(router.query.address1);
+  let rQaddress2 = decodeURI(router.query.address2);
+  let rQphone = decodeURI(router.query.phone);
+  let rQgroup = decodeURI(router.query.group);
+  let rQmusician1 = decodeURI(router.query.musician1);
+  let rQmusician2 = decodeURI(router.query.musician2);
+  let rQmusician3 = decodeURI(router.query.musician3);
+  let rQmusician4 = decodeURI(router.query.musician4);
+  let rQmusician5 = decodeURI(router.query.musician5);
+  let rQmusician6 = decodeURI(router.query.musician6);
+  //
+  const [id, setid] = useState(rQid);
+  const [date1, setDate1] = useState(rQdate1);
+  const [date2, setDate2] = useState(rQdate2);
+  const [lastdate, setLastdate] = useState(rQlastdate);
+  const [venue, setVenue] = useState(rQvenue);
+  const [website, setWebsite] = useState(rQwebsite);
+  const [address1, setAddress1] = useState(rQaddress1);
+  const [address2, setAddress2] = useState(rQaddress2);
+  const [phone, setPhone] = useState(rQphone);
+  const [group, setGroup] = useState(rQgroup);
+  const [musician1, setMusician1] = useState(rQmusician1);
+  const [musician2, setMusician2] = useState(rQmusician2);
+  const [musician3, setMusician3] = useState(rQmusician3);
+  const [musician4, setMusician4] = useState(rQmusician4);
+  const [musician5, setMusician5] = useState(rQmusician5);
+  const [musician6, setMusician6] = useState(rQmusician6);
   //
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
-
   //
-  useEffect(() => {
-    console.log(date1, message, error);
-  }, [date1, error, message]);
-
   const handleShow = async (e) => {
     e.preventDefault();
     // reset error and message
     setMessage("");
     setError("");
-    // fields check
+    // check fields
     if (
       !date1 ||
       !lastdate ||
@@ -54,7 +74,7 @@ const AddShow = () => {
     )
       return setError("Required fields are empty!");
 
-    // show structure
+    //
     let show = {
       date1,
       date2,
@@ -71,12 +91,9 @@ const AddShow = () => {
       musician4,
       musician5,
       musician6,
-      // published: false,
-      // createdAt: new Date().toISOString(),
     };
-    console.log("ADD SHOW", show);
     // save the show
-    let response = await fetch("/api/upcomingshows", {
+    let response = await fetch("/api/shows", {
       method: "POST",
       body: JSON.stringify(show),
     });
@@ -85,8 +102,7 @@ const AddShow = () => {
     let data = await response.json();
 
     if (data.success) {
-      console.log("SUCESS", data);
-      // reset the fields
+      // reset all fields
       setDate1("");
       setDate2("");
       setLastdate("");
@@ -102,11 +118,10 @@ const AddShow = () => {
       setMusician4("");
       setMusician5("");
       setMusician6("");
-      // set the message
-      return setMessage(data.message);
+      // reload page
+      return router.push("/all-shows");
     } else {
-      // set the error
-      console.log("ERROR", data);
+      // set error
       return setError(data.message);
     }
   };
@@ -118,6 +133,7 @@ const AddShow = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-10 py-9">
+              <h2>Add show</h2>
               <Form onSubmit={handleShow}>
                 <Row className="mb-3">
                   <Form.Group
@@ -393,7 +409,7 @@ const AddShow = () => {
                 </Row>
 
                 <Button variant="primary" type="submit">
-                  Submit
+                  Add show
                 </Button>
               </Form>
             </div>
