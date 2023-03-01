@@ -1,4 +1,4 @@
-// pages/shows.js
+// pages/shows-list.js
 
 //
 import Head from "next/head";
@@ -7,18 +7,16 @@ import Intro from "../components/intro";
 import Layout from "../components/layout";
 import NavbarRb from "../components/navbar";
 import Icons from "../components/icons";
-//
-import Avatar from "../components/avatar";
-import ShowsClean from "../components/shows-clean";
-import { getPageName } from "../lib/api";
+import ShowShow from "../components/show-show";
+import useSWR from "swr";
 
-//
-const Shows = ({ pageName: { edges } }) => {
-  // console.log("edges", edges);
-  const shows = edges.filter((o) => o.node.title == "Shows-live");
-  let node = shows[0].node;
-  // console.log("Shows page", node);
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
+const Shows = () => {
+  const { data, error } = useSWR("/api/shows", fetcher);
+  //
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>Loading...</div>;
   //
   return (
     <>
@@ -32,19 +30,23 @@ const Shows = ({ pageName: { edges } }) => {
           <div className="anchor" id="content" />
           <Icons />
           {/*  */}
-          <div className="mt-3 mb-6">
+          <div className="mt-3 pb-6">
             <div className="container">
               <div className="row">
                 <div className="col-12">
                   <h1 className="display-4">Shows</h1>
-                  <hr className="mb-2" />
-                  {/* <Avatar
-                  author={node.author}
-                  date={node.date}
-                  className="d-inline p-2"
-                  /> */}
+                  <hr className="my-4" />
+                  {/*  */}
+                  {data.shows.length === 0 ? (
+                    <h2>No added posts</h2>
+                  ) : (
+                    <ul className="list-unstyled">
+                      {data.shows.map((show, i) => (
+                        <ShowShow show={show} key={i} />
+                      ))}
+                    </ul>
+                  )}
                 </div>
-                <ShowsClean content={node.content} />
               </div>
             </div>
           </div>
@@ -52,16 +54,6 @@ const Shows = ({ pageName: { edges } }) => {
       </Layout>
     </>
   );
-};
-
-//
-export const getStaticProps = async () => {
-  const pageName = await getPageName();
-  //
-  return {
-    props: { pageName },
-    revalidate: 10,
-  };
 };
 
 export default Shows;

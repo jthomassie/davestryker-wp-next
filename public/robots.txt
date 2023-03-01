@@ -3,3 +3,11 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+# Block all crawlers for /editor
+User-agent: *
+Disallow: /editor/
+
+# Block all crawlers for /api
+User-agent: *
+Disallow: /api/

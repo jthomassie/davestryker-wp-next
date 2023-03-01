@@ -18,6 +18,7 @@ const Intro = () => {
                 alt="Dave Stryker cover photo"
                 width={2000}
                 height={750}
+                priority
                 style={{
                   maxWidth: "100%",
                   height: "auto",
@@ -42,6 +43,7 @@ const Intro = () => {
                             maxWidth: "100%",
                             height: "auto",
                           }}
+                          priority
                         />
                       </Link>
                     </div>

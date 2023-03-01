@@ -1,7 +1,7 @@
 // https://www.section.io/engineering-education/build-nextjs-with-mongodb-and-deploy-on-vercel/
-// pages/add-show.js
+// pages/editor/add-show.js
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
@@ -12,11 +12,6 @@ import { useRouter } from "next/router";
 const AddShow = () => {
   //
   const router = useRouter();
-  // let show = decodeURI(router.query.show);
-  // let id = decodeURI(router.query.id);
-  // let v = decodeURI(router.query.v);
-
-  let rQid = decodeURI(router.query.id);
   let rQdate1 = decodeURI(router.query.date1);
   let rQdate2 = decodeURI(router.query.date2);
   let rQlastdate = decodeURI(router.query.lastdate);
@@ -33,7 +28,6 @@ const AddShow = () => {
   let rQmusician5 = decodeURI(router.query.musician5);
   let rQmusician6 = decodeURI(router.query.musician6);
   //
-  const [id, setid] = useState(rQid);
   const [date1, setDate1] = useState(rQdate1);
   const [date2, setDate2] = useState(rQdate2);
   const [lastdate, setLastdate] = useState(rQlastdate);
@@ -119,7 +113,7 @@ const AddShow = () => {
       setMusician5("");
       setMusician6("");
       // reload page
-      return router.push("/all-shows");
+      return router.push("/editor/all-shows");
     } else {
       // set error
       return setError(data.message);
@@ -132,14 +126,14 @@ const AddShow = () => {
       <div className="white-base pb-9">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-10 py-9">
+            <div className="col-10 pt-5 pb-9">
               <h2>Add show</h2>
               <Form onSubmit={handleShow}>
-                <Row className="mb-3">
+                <Row className="my-0">
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formDate1"
                   >
                     <Form.Label>Date 1 (required)</Form.Label>
@@ -157,7 +151,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formDate2"
                   >
                     <Form.Label>Date 2</Form.Label>
@@ -174,7 +168,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formLastdate"
                   >
                     <Form.Label>Last date (required)</Form.Label>
@@ -193,11 +187,11 @@ const AddShow = () => {
                   </Form.Group>
                 </Row>
 
-                <Row className="mb-3">
+                <Row className="my-0">
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formVenue"
                   >
                     <Form.Label>Venue (required)</Form.Label>
@@ -215,7 +209,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formWebsite"
                   >
                     <Form.Label>Website (required)</Form.Label>
@@ -231,11 +225,11 @@ const AddShow = () => {
                   </Form.Group>
                 </Row>
 
-                <Row className="mb-3">
+                <Row className="my-0:">
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-3"
+                    className="my-0:"
                     controlId="formAddress1"
                   >
                     <Form.Label>Venue Address 1</Form.Label>
@@ -252,7 +246,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-3"
+                    className="my-0:"
                     controlId="formAddress2"
                   >
                     <Form.Label>Venue Address 2</Form.Label>
@@ -269,7 +263,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formPhone"
                   >
                     <Form.Label>Venue Phone</Form.Label>
@@ -287,7 +281,7 @@ const AddShow = () => {
                 <Form.Group
                   as={Col}
                   md="12"
-                  className="mb-1"
+                  className="my-0"
                   controlId="formGroup"
                 >
                   <Form.Label>Group (required)</Form.Label>
@@ -302,11 +296,11 @@ const AddShow = () => {
                   </Form.Text>
                 </Form.Group>
 
-                <Row className="mb-3">
+                <Row className="my-0:">
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formMusician1"
                   >
                     <Form.Label>Musician 1</Form.Label>
@@ -323,7 +317,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formMusician2"
                   >
                     <Form.Label>Musician 2</Form.Label>
@@ -340,7 +334,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formMusician3"
                   >
                     <Form.Label>Musician 3</Form.Label>
@@ -355,11 +349,11 @@ const AddShow = () => {
                   </Form.Group>
                 </Row>
 
-                <Row className="mb-3">
+                <Row className="my-0:">
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formMusician4"
                   >
                     <Form.Label>Musician 4</Form.Label>
@@ -376,7 +370,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formMusician5"
                   >
                     <Form.Label>Musician 5</Form.Label>
@@ -393,7 +387,7 @@ const AddShow = () => {
                   <Form.Group
                     as={Col}
                     md="4"
-                    className="mb-1"
+                    className="my-0"
                     controlId="formMusician6"
                   >
                     <Form.Label>Musician 6</Form.Label>
@@ -408,7 +402,7 @@ const AddShow = () => {
                   </Form.Group>
                 </Row>
 
-                <Button variant="primary" type="submit">
+                <Button className="mt-3" variant="primary" type="submit">
                   Add show
                 </Button>
               </Form>

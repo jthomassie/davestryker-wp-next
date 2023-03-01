@@ -2,8 +2,6 @@
 
 // http://eepurl.com/ikkKjz
 // https://davestryker.us8.list-manage.com/subscribe/post" method="POST">
-// <input type="hidden" name="u" value="e1c8140969ce02d7d794df5c9">
-// <input type="hidden" name="id" value="b270622918"></input>
 
 import { useState, useEffect } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
@@ -28,9 +26,6 @@ const CustomForm = ({ status, message, onValidated }) => {
     setEmail(e.target.email.value);
     setFirstName(e.target.firstName.value);
     setLastName(e.target.lastName.value);
-    //
-    // console.log(email, firstName, lastName);
-    // console.log(status, message, onValidated);
     //
     email &&
       firstName &&
@@ -57,7 +52,6 @@ const CustomForm = ({ status, message, onValidated }) => {
   };
   //
   useEffect(() => {
-    // console.log("UE", status, modalOpen);
     if (status === "success") clearFields();
     if (modalOpen && status === "success") clearFields();
   }, [status, modalOpen]);

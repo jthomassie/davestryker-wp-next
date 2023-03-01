@@ -26,12 +26,10 @@ const Index = ({ allPosts: { edges } }) => {
     o.node.cats = categs;
     return o;
   });
-  // console.log("allPosts", allPosts);
 
   const featuredPost = allPosts.find((o) => {
     return o.node.cats.indexOf("Featured") !== -1;
   }).node;
-  // console.log("featuredPost", featuredPost);
 
   const morePosts = allPosts.filter((o) => {
     return o.node.cats.indexOf("Featured") == -1;

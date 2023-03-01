@@ -1,6 +1,6 @@
 // https://www.section.io/engineering-education/build-nextjs-with-mongodb-and-deploy-on-vercel/
 // https://github.com/Rose-stack/nextjs-blog-app-with-mongodb
-// pages/api/new-show.js
+// pages/api/shows.js
 
 import { format } from "date-fns";
 
@@ -9,20 +9,17 @@ const COL = "shows2";
 const ObjectId = require("mongodb").ObjectId;
 
 const handler = async (req, res) => {
-  // switch the methods
+  // switch req methods
   switch (req.method) {
     case "GET": {
       return getShows(req, res);
     }
-
     case "POST": {
       return addShow(req, res);
     }
-
     case "PUT": {
       return updateShow(req, res);
     }
-
     case "DELETE": {
       return deleteShow(req, res);
     }
@@ -62,7 +59,7 @@ const findShows = async (req, res) => {
     let shows = await db
       .collection(COL)
       .find({})
-      .sort({ published: -1 })
+      .sort({ lastdate: 1 })
       .toArray();
     return res.json({
       shows: JSON.parse(JSON.stringify(shows)),
@@ -82,12 +79,12 @@ const addShow = async (req, res) => {
     let { db } = await connectToStrikezone();
     await db.collection(COL).insertOne(JSON.parse(req.body));
     return res.json({
-      message: "Show added",
+      shows: "Show added",
       success: true,
     });
   } catch (error) {
     return res.json({
-      message: new Error(error).message,
+      shows: new Error(error).message,
       success: false,
     });
   }
@@ -104,12 +101,12 @@ const updateShow = async (req, res) => {
         { $set: { published: true } }
       );
     return res.json({
-      message: "Show updated",
+      shows: "Show updated",
       success: true,
     });
   } catch (error) {
     return res.json({
-      message: new Error(error).message,
+      shows: new Error(error).message,
       success: false,
     });
   }
@@ -123,12 +120,12 @@ const deleteShow = async (req, res) => {
       _id: new ObjectId(req.body),
     });
     return res.json({
-      message: "Show deleted",
+      shows: "Show deleted",
       success: true,
     });
   } catch (error) {
     return res.json({
-      message: new Error(error).message,
+      shows: new Error(error).message,
       success: false,
     });
   }
