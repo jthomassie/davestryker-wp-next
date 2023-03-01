@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 import "../styles/global-vars.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/globals.css";
-//
 import { useEffect } from "react";
 //
 const App = ({ Component, pageProps }) => {
