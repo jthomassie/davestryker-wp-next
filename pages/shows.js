@@ -15,9 +15,6 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Shows = () => {
   const { data, error } = useSWR("/api/shows", fetcher);
   //
-  // if (error) return <div>Failed to load</div>;
-  // if (!data) return <div>Loading...</div>;
-  //
   return (
     <>
       <Layout>

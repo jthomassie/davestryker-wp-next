@@ -11,7 +11,7 @@ const ShowShow = ({ show }) => {
           {show.date2 !== "" && <div className="shows-date">{show.date2}</div>}
         </div>
         {/* venue */}
-        <div className="col-4">
+        <div className="col-5 col-md-4">
           <div className="shows-venue">
             <a href={`${show.website}`}>{show.venue}</a>
           </div>
@@ -24,7 +24,7 @@ const ShowShow = ({ show }) => {
           {show.phone !== "" && <div className="shows-p">{show.phone}</div>}
         </div>
         {/* group */}
-        <div className="col-8">
+        <div className="col-7 col-md-8">
           <div className="shows-group">{show.group}</div>
           {show.musician1 !== "" && (
             <div className="shows-p">{show.musician1}</div>
