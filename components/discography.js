@@ -38,15 +38,15 @@ const Discography = () => {
             <li>Blue Strike (2010) SteepleChase 31729</li>
             <li>Blue to the Bone IV (2013) SteepleChase 31755</li>
             <li>Eight Track (2014) Strikezone Records 8809</li>
-            <li>Messin' with Mister T (2015) Strikezone Records 8812</li>
+            <li>Messin&apos; with Mister T (2015) Strikezone Records 8812</li>
             <li>Eight Track II (2016) Strikezone Records 8814</li>
             <li>
-              Strykin' Ahead (2017) Strikezone Records 8815 (Also Vinyl LP)
+              Strykin&apos; Ahead (2017) Strikezone Records 8815 (Also Vinyl LP)
             </li>
             <li>Eight Track III (2019) Strikezone Records 8818</li>
             <li>Eight Track Christmas (2019) Strikezone Records 8819</li>
             <li>Blue Soul (2020) Strikezone Records 8820</li>
-            <li>Baker's Circle (2021) Strikezone Records 8821</li>
+            <li>Baker&apos;s Circle (2021) Strikezone Records 8821</li>
             <li>As We Are (2022) Strikezone Records 8822 (Also Vinyl LP)</li>
             <li>
               Prime - Dave Stryker Trio (2023) Strikezone Records 8823 (Also
@@ -98,11 +98,12 @@ const Discography = () => {
             <li>Steve Slagle (2018) Dedication / Panorama Records 007</li>
             <li>Alan Botschinsky (1992) Last Summer / MA Music A804-2</li>
             <li>
-              Alan Botschinsky (1995) I've Got Another Rhythm / MA Music A916-2
+              Alan Botschinsky (1995) I&apos;ve Got Another Rhythm / MA Music
+              A916-2
             </li>
             <li>Javon Jackson (1999) Pleasant Valley / Blue Note 99697</li>
             <li>Larry Schneider (1997) Ali Girl / SteepleChase 31429</li>
-            <li>Danny Walsh (1997) D's Mood SteepleChase 31428</li>
+            <li>Danny Walsh (1997) D&apos;s Mood SteepleChase 31428</li>
             <li>
               Andy LaVerne (1996) Stan Getz in Chappaqua / SteepleChase 31418
             </li>
@@ -168,7 +169,7 @@ const Discography = () => {
               (also producer)
             </li>
             <li>
-              Rachel Caswell (2018) We're All in the Dance / Turtle Ridge
+              Rachel Caswell (2018) We&apos;re All in the Dance / Turtle Ridge
               Records Trr 003 (also producer)
             </li>
             <li>
