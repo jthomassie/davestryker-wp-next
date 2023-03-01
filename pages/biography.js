@@ -34,7 +34,7 @@ const Biography = ({ pageName: { edges } }) => {
 
           <Icons />
           {/*  */}
-          <div className="mt-3 mb-6">
+          <div className="mt-3 pb-6">
             <div className="container">
               <div className="row">
                 <div className="col-12">
