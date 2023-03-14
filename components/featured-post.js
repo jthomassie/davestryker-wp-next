@@ -1,4 +1,4 @@
-// components/featured-post-test.js
+// components/featured-post.js
 
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
@@ -34,25 +34,22 @@ const FeaturedPost = ({
             </div>
             {/* left col story */}
             <div className="col-12 mb-6">
-              <div className="col-5 float-end mt-2 ms-4 mb-3">
-                <CoverImage
-                  title={title}
-                  coverImage={featuredImage}
-                  slug={slug}
-                  width={featuredImage.node.mediaDetails.width}
-                  height={featuredImage.node.mediaDetails.height}
-                />
-              </div>
+              {!!featuredImage && (
+                <div className="col-5 float-end mt-2 ms-4 mb-3">
+                  <CoverImage
+                    title={title}
+                    coverImage={featuredImage}
+                    slug={slug}
+                    width={featuredImage.node.mediaDetails.width}
+                    height={featuredImage.node.mediaDetails.height}
+                  />
+                </div>
+              )}
               <div
                 className="mb-3"
                 dangerouslySetInnerHTML={{ __html: content }}
               />
             </div>
-
-            {/* full width
-            <div className="col-12">
-              <hr className="mt-6 mb-6" />
-            </div>  */}
           </div>
         </div>
       </>
@@ -71,15 +68,17 @@ const FeaturedPost = ({
           </div>
           {/* left col story */}
           <div className="col-12 x-0 mb-6">
-            <div className="col-5 float-start mt-2 me-4 mb-3">
-              <CoverImage
-                title={title}
-                coverImage={featuredImage}
-                slug={slug}
-                width={featuredImage.node.mediaDetails.width}
-                height={featuredImage.node.mediaDetails.height}
-              />
-            </div>
+            {!!featuredImage && (
+              <div className="col-5 float-start mt-2 me-4 mb-3">
+                <CoverImage
+                  title={title}
+                  coverImage={featuredImage}
+                  slug={slug}
+                  width={featuredImage.node.mediaDetails.width}
+                  height={featuredImage.node.mediaDetails.height}
+                />
+              </div>
+            )}
             <div
               className="mb-3"
               dangerouslySetInnerHTML={{ __html: content }}

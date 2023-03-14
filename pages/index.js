@@ -12,7 +12,7 @@ import NavbarRb from "../components/navbar";
 import Icons from "../components/icons";
 //
 import MoreStories from "../components/more-stories";
-import FeaturedPost from "../components/featured-post-test";
+import FeaturedPost from "../components/featured-post";
 
 //
 const Index = ({ allPosts: { edges } }) => {

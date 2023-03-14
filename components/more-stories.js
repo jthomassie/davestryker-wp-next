@@ -1,6 +1,6 @@
 // components/more-stories.js
 
-import FeaturedPost from "../components/featured-post-test";
+import FeaturedPost from "../components/featured-post";
 import MailchimpForm from "../components/mailchimp-form";
 
 const MoreStories = ({ posts }) => {
