@@ -21,7 +21,7 @@ const Music = () => {
       sku: "8823",
       img: "/Prime-1024x933.jpg",
       uri: "album/prime",
-      types: "CD, Vinyl, Download (MP3s)",
+      types: "CD, Vinyl, Download (mp3s)",
     },
     {
       title: "As We Are",
@@ -30,7 +30,7 @@ const Music = () => {
       sku: "8822",
       img: "/as_we_are_1200x1200.jpg",
       uri: "album/as-we-are",
-      types: "CD, Vinyl, Download (MP3s)",
+      types: "CD, Vinyl, Download (mp3s)",
     },
     {
       title: "Baker's Circle",
@@ -39,7 +39,7 @@ const Music = () => {
       sku: "8821",
       img: "/Bakers-Circle-1024x914.jpg",
       uri: "album/bakers-circle",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Blue Soul",
@@ -48,7 +48,7 @@ const Music = () => {
       sku: "8820",
       img: "/Blue-Soul-1024x899.jpg",
       uri: "album/blue-soul",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Eight Track Christmas",
@@ -57,7 +57,7 @@ const Music = () => {
       sku: "8819",
       img: "/Eight-Track-Christmas-1024x907.jpg",
       uri: "album/eight-track-christmas",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Eight Track III",
@@ -66,7 +66,7 @@ const Music = () => {
       sku: "8818",
       img: "/Eight-Track-III-1024x921.jpg",
       uri: "album/eight-track-iii",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Strykin' Ahead",
@@ -75,7 +75,7 @@ const Music = () => {
       sku: "8815",
       img: "/Strykin-Ahead-1024x915.jpg",
       uri: "album/strykin-ahead",
-      types: "CD, Vinyl, Download (MP3s)",
+      types: "CD, Vinyl, Download (mp3s)",
     },
     {
       title: "Eight Track II",
@@ -84,7 +84,7 @@ const Music = () => {
       sku: "8814",
       img: "/Eight-Track-II-1024x918.jpg",
       uri: "album/eight-track-ii",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Messin' with Mister T",
@@ -93,7 +93,7 @@ const Music = () => {
       sku: "8812",
       img: "/messin-1200x1030.jpg",
       uri: "album/messin-with-mister-t",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Eight Track",
@@ -102,7 +102,7 @@ const Music = () => {
       sku: "8809",
       img: "/eight-track-1196x2000.jpg",
       uri: "album/eight-track",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Six String Santa",
@@ -111,7 +111,7 @@ const Music = () => {
       sku: "8806",
       img: "/six-string-santa-700x700.jpg",
       uri: "album/six-string-santa",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "The Guitar Artistry of Billy Rogers",
@@ -120,7 +120,7 @@ const Music = () => {
       sku: "8808A",
       img: "/the-guitar-artistry-of-billy-rogers-700x700.jpg",
       uri: "album/the-guitar-artistry-of-billy-rogers",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Guitar On Top",
@@ -129,7 +129,7 @@ const Music = () => {
       sku: "8805",
       img: "/guitar-on-top-700x700.jpg",
       uri: "album/guitar-on-top",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "First Strike",
@@ -138,7 +138,7 @@ const Music = () => {
       sku: "1011",
       img: "/first-strike-700x700.jpg",
       uri: "album/first-strike",
-      types: "Download (MP3s)",
+      types: "Download (mp3s)",
     },
     {
       title: "Dave Stryker's Jazz Guitar Improvisation Method, Vol III",

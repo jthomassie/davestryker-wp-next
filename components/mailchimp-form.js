@@ -71,7 +71,7 @@ const CustomForm = ({ status, message, onValidated }) => {
               <div className="form-lg mb-2">
                 {status === "success"
                   ? "Success!"
-                  : "Join my email list to receive future updates"}
+                  : "Subscribe to my newsletter"}
               </div>
               {status === "sending" && <h5 className="">Sending...</h5>}
               {status === "error" && (
@@ -108,9 +108,8 @@ const CustomForm = ({ status, message, onValidated }) => {
                       className="mb-2"
                       controlId="firstName"
                     >
-                      <Form.Label>First Name (required)</Form.Label>
+                      <Form.Label>First Name</Form.Label>
                       <Form.Control
-                        required
                         type="text"
                         placeholder=""
                         onChange={(e) => setFirstNameHandler(e.target.value)}
@@ -122,9 +121,8 @@ const CustomForm = ({ status, message, onValidated }) => {
                       className="mb-2"
                       controlId="lastName"
                     >
-                      <Form.Label>Last Name (required)</Form.Label>
+                      <Form.Label>Last Name</Form.Label>
                       <Form.Control
-                        required
                         type="text"
                         placeholder=""
                         onChange={(e) => setLastNameHandler(e.target.value)}
