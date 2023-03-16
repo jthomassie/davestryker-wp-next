@@ -17,7 +17,10 @@ const FeaturedPost = ({
   content,
   author,
   slug,
+  cats,
 }) => {
+  // console.log("CATS", cats);
+
   //
   if (isEven(index)) {
     return (
@@ -84,10 +87,6 @@ const FeaturedPost = ({
               dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>
-          {/* full width
-          <div className="col-12">
-            <hr className="mt-6 mb-6" />
-          </div>  */}
         </div>
       </div>
     </>

@@ -20,20 +20,26 @@ const Index = ({ allPosts: { edges } }) => {
   const allPosts = edges;
   allPosts.forEach((o) => {
     let categs = [];
-    o.node.categories.edges.forEach((n) => {
-      categs.push(n.node.name);
+    o.node.categories.nodes.forEach((n) => {
+      categs.push(n.name);
     });
     o.node.cats = categs;
     return o;
   });
+  // console.log("allPosts", allPosts);
 
   const featuredPost = allPosts.find((o) => {
     return o.node.cats.indexOf("Featured") !== -1;
   }).node;
+  // console.log("featuredPost", featuredPost);
 
   const morePosts = allPosts.filter((o) => {
-    return o.node.cats.indexOf("Featured") == -1;
+    return (
+      o.node.cats.indexOf("Featured") == -1 &&
+      o.node.cats.indexOf("Draft") == -1
+    );
   });
+  // console.log("morePosts", morePosts);
 
   //
   return (
@@ -56,6 +62,7 @@ const Index = ({ allPosts: { edges } }) => {
               author={featuredPost.author}
               slug={featuredPost.slug}
               content={featuredPost.content}
+              cats={featuredPost.cats}
             />
           )}
           {/*  */}

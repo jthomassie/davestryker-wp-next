@@ -386,7 +386,8 @@ hr {
 }
 
 .type-shadow {
-  filter: drop-shadow(3px 3px 5px #13212e);
+  /* filter: drop-shadow(3px 3px 5px #13212e); */
+  filter: drop-shadow(3px 5px 7px #000000a1);
 }
 
 .lt-bg {

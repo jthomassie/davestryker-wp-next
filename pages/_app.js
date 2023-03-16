@@ -2,10 +2,27 @@
 
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+// import { Roboto } from "next/font/google";
+// import { Roboto_Slab } from "next/font/google";
 import "../styles/global-vars.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/globals.css";
 import { useEffect } from "react";
+//
+// const roboto = Roboto({
+//   weight: ["400", "500"],
+//   style: ["normal", "italic"],
+//   subsets: ["latin"],
+//   variable: "__roboto",
+// });
+// const robotoslab = Roboto_Slab({
+//   weight: ["400", "500"],
+//   style: ["normal"],
+//   subsets: ["latin"],
+//   variable: "__roboto_slab",
+// });
+// console.log("roboto", roboto);
+// console.log("robotoslab", robotoslab);
 //
 const App = ({ Component, pageProps }) => {
   //
@@ -17,7 +34,6 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <meta charSet="utf-8" />
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Dave Stryker" />
         <meta name="robots" content="all" />

@@ -29,11 +29,11 @@ const ProductPreview = ({
           }}
         />
         <div className="card-body">
-          <h1 className="display-6 cd-name card-title">{name}</h1>
-          <p className="card-text small-type m-0 mb-2">
+          <h1 className="display-6 cd-name card-title m-0 mb-1">{name}</h1>
+          <p className="card-text small-type m-0 mb-1">
             {year} • {label} {sku}
           </p>
-          <p className="med-type bold m-0 mb-3">{types}</p>
+          <p className="med-type bold m-0 mb-1">{types}</p>
           <a
             href={`https://davestryker.bandcamp.com/${uri}`}
             target="_blank"

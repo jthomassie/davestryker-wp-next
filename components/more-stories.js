@@ -27,6 +27,7 @@ const MoreStories = ({ posts }) => {
             author={node.author}
             slug={node.slug}
             content={node.content}
+            cats={node.cats}
           />
         ))}
       </div>
