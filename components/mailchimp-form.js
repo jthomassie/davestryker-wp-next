@@ -71,7 +71,7 @@ const CustomForm = ({ status, message, onValidated }) => {
               <div className="form-lg mb-2">
                 {status === "success"
                   ? "Success!"
-                  : "Subscribe to my newslettter to receive update emails"}
+                  : "Subscribe to my newsletter"}
               </div>
               {status === "sending" && <h5 className="">Sending...</h5>}
               {status === "error" && (
