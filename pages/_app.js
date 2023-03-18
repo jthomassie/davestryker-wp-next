@@ -53,7 +53,7 @@ const App = ({ Component, pageProps }) => {
         <meta name="og:image:alt" content="Dave Stryker cover photo" />
       </Head>
       <style jsx global>{`
-        html {
+        body {
           font-family: ${robotoFont.style.fontFamily};
         }
         .wp-block-quote,
