@@ -122,6 +122,13 @@ a:active {
 }
 
 .list-inline-item a:link {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+}
+
+.list-inline-item a:link {
   color: #c2c7cd !important;
   text-decoration: none;
 }
@@ -130,7 +137,7 @@ a:active {
   text-decoration: none;
 }
 .list-inline-item a:hover {
-  color: #c2c7cd !important;
+  color: #eff2f5 !important;
   text-decoration: none;
 }
 .list-inline-item a:active {
@@ -139,7 +146,9 @@ a:active {
 }
 
 .navbar-nav .show > .nav-link,
+.navbar-nav .show > .nav-link:hover,
 .navbar-nav .nav-link.active {
+  color: #eff2f5 !important;
   background-color: #1c3f7c;
 }
 

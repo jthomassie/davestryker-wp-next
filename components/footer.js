@@ -14,20 +14,20 @@ const Footer = () => {
           {/* nav */}
           <div className="col-12">
             <ul className="list-inline">
-              <li className="list-inline-item">
-                <Link href="/">News •</Link>
+              <li className="list-inline-item me-3">
+                <Link href="/">News</Link>
               </li>
-              <li className="list-inline-item">
-                <Link href="/shows"> Shows •</Link>
+              <li className="list-inline-item me-3">
+                <Link href="/shows">Shows</Link>
               </li>
-              <li className="list-inline-item">
-                <Link href="/music"> Music •</Link>
+              <li className="list-inline-item me-3">
+                <Link href="/music">Music</Link>
               </li>
-              <li className="list-inline-item">
-                <Link href="/biography"> Biography •</Link>
+              <li className="list-inline-item me-3">
+                <Link href="/biography">Biography</Link>
               </li>
-              <li className="list-inline-item">
-                <Link href="/media"> Media kit</Link>
+              <li className="list-inline-item me-3">
+                <Link href="/media">Media kit</Link>
               </li>
             </ul>
           </div>
