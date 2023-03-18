@@ -1,28 +1,28 @@
 // pages/_app.js
 
 import Head from "next/head";
+import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
-// import { Roboto } from "next/font/google";
-// import { Roboto_Slab } from "next/font/google";
+import { Roboto } from "next/font/google";
+import { Roboto_Slab } from "next/font/google";
 import "../styles/global-vars.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/globals.css";
-import { useEffect } from "react";
 //
-// const roboto = Roboto({
-//   weight: ["400", "500"],
-//   style: ["normal", "italic"],
-//   subsets: ["latin"],
-//   variable: "__roboto",
-// });
-// const robotoslab = Roboto_Slab({
-//   weight: ["400", "500"],
-//   style: ["normal"],
-//   subsets: ["latin"],
-//   variable: "__roboto_slab",
-// });
-// console.log("roboto", roboto);
-// console.log("robotoslab", robotoslab);
+const robotoFont = Roboto({
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--robotoFont",
+  fallback: ["sans-serif"],
+});
+const robotoSlabFont = Roboto_Slab({
+  weight: ["400", "500"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--robotoSlabFont",
+  fallback: ["serif"],
+});
 //
 const App = ({ Component, pageProps }) => {
   //
@@ -52,6 +52,15 @@ const App = ({ Component, pageProps }) => {
         />
         <meta name="og:image:alt" content="Dave Stryker cover photo" />
       </Head>
+      <style jsx global>{`
+        html {
+          font-family: ${robotoFont.style.fontFamily};
+        }
+        .wp-block-quote,
+        blockquote {
+          font-family: ${robotoSlabFont.style.fontFamily};
+        }
+      `}</style>
       <Component {...pageProps} />
       <Analytics />
     </>

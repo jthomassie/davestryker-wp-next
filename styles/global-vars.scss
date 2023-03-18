@@ -43,12 +43,12 @@ $h5-font-size: $font-size-base * 1.5 !default;
 $h6-font-size: $font-size-base * 1.25 !default;
 
 // sans-serif font
-$font-family-sans-serif: "Roboto", sans-serif;
+// $font-family-sans-serif: "Roboto", sans-serif;
 // "neue-haas-grotesk-display", "Helvetica", "Arial", sans-serif;
 // $font-family-sans-serif: "Helvetica", "Arial", sans-serif;
 
 // heading font
-$headings-font-family: "Roboto", sans-serif;
+// $headings-font-family: "Roboto", sans-serif;
 // "neue-haas-grotesk-display", "Helvetica", "Arial", sans-serif;
 // $headings-font-family: "Barlow Condensed", sans-serif;
 
@@ -79,7 +79,7 @@ $display-font-sizes: (
   5: 2.5rem,
   6: 1.15rem,
 ) !default;
-$display-font-family: $headings-font-family !default;
+// $display-font-family: $headings-font-family !default;
 $display-font-weight: 400 !default;
 // $display-font-style: null !default;
 // $display-line-height: $headings-line-height !default;
@@ -107,18 +107,6 @@ th,
 td {
   line-height: 1.25;
 }
-
-// adobe typekit - neue-haas-grotesk-display
-// @import url("https://use.typekit.net/udi1hit.css");
-
-// google fonts
-// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;500;500&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
-// @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-// @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
 
 // bootstrap 5 css
 @import "~bootstrap/scss/bootstrap.scss";

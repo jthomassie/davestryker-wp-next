@@ -151,7 +151,7 @@ footer p {
 }
 
 .wp-block-quote {
-  font-family: "Roboto Slab", serif;
+  /* font-family: "Roboto Slab", serif; */
   font-weight: 400;
   font-style: italic;
   margin: 2.5rem 0 2.5rem 0;
@@ -168,7 +168,7 @@ footer p {
 }
 
 cite {
-  font-family: "Roboto Slab", serif;
+  /* font-family: "Roboto Slab", serif; */
   font-weight: 400;
   font-size: 1.1rem !important;
   line-height: 1.6;
