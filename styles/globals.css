@@ -280,9 +280,6 @@ hr {
 }
 
 .cover-img {
-  /* border: 1px solid #254e95;
-  box-shadow: 0px 0px 12px #254e95; 
-  transition: all 0.15s ease-out; */
   border: 1px solid #4d6b85;
   filter: drop-shadow(3px 5px 7px #000000a1);
 }
