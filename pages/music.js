@@ -15,6 +15,15 @@ const Music = () => {
   // music data
   let items = [
     {
+      title: "Groove Street",
+      year: "2024",
+      label: "Strikezone Records",
+      sku: "8824",
+      img: "/groove-street-700x700.jpg",
+      uri: "album/groove-street",
+      types: "CD, Download (mp3s)",
+    },
+    {
       title: "Prime",
       year: "2023",
       label: "Strikezone Records",
