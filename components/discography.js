@@ -52,6 +52,10 @@ const Discography = () => {
               Prime - Dave Stryker Trio (2023) Strikezone Records 8823 (Also
               Vinyl LP)
             </li>
+            <li>
+              Groove Street - Dave Stryker Trio with Bob Mintzer (2024)
+              Strikezone Records 8824
+            </li>
           </ul>
         </div>
         {/* */}
