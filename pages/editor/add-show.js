@@ -179,7 +179,7 @@ const AddShow = () => {
                       onChange={(e) => setLastdate(e.target.value)}
                     />
                     <Form.Text className="text-muted">
-                      Ex.: 2023-01-30 (YYYY-MM-DD)
+                      Ex.: 2025-01-30 (YYYY-MM-DD)
                     </Form.Text>
                     <Form.Control.Feedback type="invalid">
                       Must be 10 characters long!

@@ -15,6 +15,15 @@ const Music = () => {
   // music data
   let items = [
     {
+      title: "Stryker with Strings Goes to the Movies",
+      year: "2025",
+      label: "Strikezone Records",
+      sku: "8827",
+      img: "/stryker-with-strings-goes-to-movies-700x700.jpg",
+      uri: "album/stryker-with-strings-goes-to-the-movies",
+      types: "CD, Download (mp3s)",
+    },
+    {
       title: "Groove Street",
       year: "2024",
       label: "Strikezone Records",

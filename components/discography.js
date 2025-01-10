@@ -56,6 +56,10 @@ const Discography = () => {
               Groove Street - Dave Stryker Trio with Bob Mintzer (2024)
               Strikezone Records 8824
             </li>
+            <li>
+              Stryker with Strings Goes to the Movies (2025) Strikezone Records
+              8827
+            </li>
           </ul>
         </div>
         {/* */}
