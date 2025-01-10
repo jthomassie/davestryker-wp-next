@@ -19,7 +19,7 @@ const Music = () => {
       year: "2025",
       label: "Strikezone Records",
       sku: "8827",
-      img: "/stryker-with-strings-goes-to-movies-700x700.jpg",
+      img: "/stryker-with-strings-goes-to-the-movies-700x700.jpg",
       uri: "album/stryker-with-strings-goes-to-the-movies",
       types: "CD, Download (mp3s)",
     },
