@@ -2,6 +2,7 @@
 
 // import { useEffect } from "react";
 // import { GetStaticProps } from "next";
+
 import { getAllPostsForHome } from "../lib/api";
 //
 import Head from "next/head";
